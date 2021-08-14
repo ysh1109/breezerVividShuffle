@@ -34,11 +34,11 @@ const Navbar = () => {
                 </div>
                <div className="menu-list" >
                  <div className={clicked?'nav-menu active':'nav-menu'}>
-                    <div><a  href="#about">About</a></div>
-                    <div><a  href="#category">Categories</a></div>
-                    <div ><a href="#shuffle">School of Shuffle</a></div>
-                    <div ><a href="">Voice of the streets</a></div>
-                    <div ><a href="">FAQs</a></div>
+                    <div><a  href="#about" onClick={()=>setClicked(false)}>About</a></div>
+                    <div><a  href="#category" onClick={()=>setClicked(false)}>Categories</a></div>
+                    <div ><a href="#shuffle" onClick={()=>setClicked(false)}>School of Shuffle</a></div>
+                    <div ><a>Voice of the streets</a></div>
+                    <div ><a>FAQs</a></div>
                     <div className="navbar_register"><span>Register</span></div>
                  </div>
                </div>

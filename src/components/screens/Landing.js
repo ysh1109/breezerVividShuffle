@@ -127,14 +127,14 @@ function Landing() {
                 </div>
                 <div className="landing_shuffle_content">
                     <div className="landing_category_content_one">
-                        <img data-aos="fade-right" className="about_image_1" src={ambassador5} fluid></img>
+                        <img data-aos="fade-up" className="about_image_1" src={ambassador5} fluid></img>
                         <img data-aos="fade-up" className="about_image_2" src={ambassador6} fluid></img>
-                        <img data-aos="fade-left" className="about_image_1" src={ambassador1} fluid></img>
+                        <img data-aos="fade-up" className="about_image_1" src={ambassador1} fluid></img>
                     </div>
                     <div className="landing_category_content_two">
-                    <img data-aos="fade-right" className="about_image_1" src={ambassador2} fluid></img>
+                    <img data-aos="fade-up" className="about_image_1" src={ambassador2} fluid></img>
                         <img data-aos="fade-up"  className="about_image_2" src={ambassador4} fluid></img>
-                        <img data-aos="fade-left" className="about_image_1" src={ambassador3} fluid></img>
+                        <img data-aos="fade-up" className="about_image_1" src={ambassador3} fluid></img>
                     </div>
                 
                 
