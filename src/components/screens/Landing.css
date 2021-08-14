@@ -145,9 +145,14 @@
     display: flex;
     flex:1;
     flex-direction: column;
-
+	justify-content: center;
+	height: 40vh;
 }
-
+.trendingText{
+	color:#ffca06;
+	text-decoration:underline;
+	font-weight:'bold';
+}
 .landing_squad_title{
     flex:0.3;
     display: flex;
@@ -270,9 +275,26 @@ padding-right: 5px;
     width: 50px;
     padding-right:5px ;
 }
+.floatingTextContainer{
+	height:50px;
+	/* background-image: url('../../Assets/backgrounds/bg_ticker-02.png'); */
+	overflow:hidden;
+	width:100%;
+}
 .marquee_text {
     font-family: GothamBlack;
     color: #000;
+	height: 50px;
+	width: 100%;
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	-moz-animation: slideshow 10s linear infinite;
+	-webkit-animation: slideshow 10s linear infinite;
+}
+@keyframes slideshow{
+	0% {  -webkit-transform: translateX(100%) }
+	100% {  -webkit-transform: translateX(-100%) }
 }
 textarea:focus, input:focus{
     outline: none;
@@ -319,6 +341,9 @@ textarea:focus, input:focus{
         height: fit-content;
         background-size: cover;
         flex-direction: column;
+		height:40vh;
+		justify-content:'center';
+		align-items:'center';
     }
     .landing_shuffle {
         display: flex;

@@ -1,5 +1,4 @@
-import React, { useState,useEffect, Component } from 'react'
-import {MenuItems} from './MenuItem'
+import React, { useState,useEffect} from 'react'
 import './Navbar.css'
 // import logo from '../../Assets/logo/BVS_Logo.png'
 import logo from '../../Assets/logo/bvs_logo.svg'
@@ -26,7 +25,7 @@ const Navbar = () => {
         return(
            <nav className={headerbg?"NavbarItems activeHeader":"NavbarItems"} >
                 <div className="menu-logo">
-                   <img src={logo} style={{height:100}}/>
+                   <img alt={"logo"} src={logo} style={{height:100}}/>
                 </div>
                <div className="menu-icon" onClick={()=>handleClick()}>
                    
@@ -37,8 +36,8 @@ const Navbar = () => {
                     <div><a  href="#about" onClick={()=>setClicked(false)}>About</a></div>
                     <div><a  href="#category" onClick={()=>setClicked(false)}>Categories</a></div>
                     <div ><a href="#shuffle" onClick={()=>setClicked(false)}>School of Shuffle</a></div>
-                    <div ><a>Voice of the streets</a></div>
-                    <div ><a>FAQs</a></div>
+                    <div ><a href="#shuffle" >Voice of the streets</a></div>
+                    <div ><a href="#shuffle" >FAQs</a></div>
                     <div className="navbar_register"><span>Register</span></div>
                  </div>
                </div>
