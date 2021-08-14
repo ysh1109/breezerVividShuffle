@@ -63,7 +63,8 @@
   dl, ol, ul {
    margin-bottom: 0 !important;
  }
- .navbar_register {
+ .navbar_register img{
+	 width: 170px;
  }
     
 .nav-links {
