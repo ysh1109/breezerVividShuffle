@@ -73,15 +73,15 @@ function Landing() {
                 <div className="landing_about_content">
                     <div className="landing_about_content_text" >
                         <p data-aos="fade-right">
-                     BREEZER Vivid Shue steps into its 5th year as India’s biggest
-    hip-hop league. Through the seasons, we’ve provided a stage
-    for the community to showcase talent, build skill and share the
-    love for all things hip-hop. We’re coming to you alongside the
-    biggest names in the industry to find the country’s best Breakers
-    Poppers, Rappers, Grati Artists and Showcase Crews and form
-    the ultimate league. Get ready to be a part of performances, battles,
-    masterclasses, and the Shue fam. This is the home of hip-hop
-    where we rep the <span className={"trendingText"}>#VoiceOfTheStreets</span> and <span className={"trendingText"}>#LiveLifeInColour.</span>
+                     		BREEZER Vivid Shue steps into its 5th year as India’s biggest
+    						hip-hop league. Through the seasons, we’ve provided a stage
+    						for the community to showcase talent, build skill and share the
+    						love for all things hip-hop. We’re coming to you alongside the
+    						biggest names in the industry to find the country’s best Breakers
+    						Poppers, Rappers, Grati Artists and Showcase Crews and form
+    						the ultimate league. Get ready to be a part of performances, battles,
+    						masterclasses, and the Shue fam. This is the home of hip-hop
+    						where we rep the <span className={"trendingText"}>#VoiceOfTheStreets</span> and <span className={"trendingText"}>#LiveLifeInColour.</span>
                         </p>
                     </div>
                     <div className="landing_about_content_image" >
@@ -121,7 +121,7 @@ function Landing() {
                 </div>
             </div>
 
-            <div id="shuffle" className="landing_shuffle" style={{backgroundImage: `url(${bg_about})`}}>
+            <div  className="landing_shuffle" style={{backgroundImage: `url(${bg_about})`}}>
                 <div data-aos="flip-up" className="landing_shuffle_title">
                     <h2>SHUFFLE AMBASSADORS</h2>
                 </div>
@@ -141,7 +141,7 @@ function Landing() {
                 </div>
             </div>
 
-            <div className="landing_category" style={{backgroundImage: `url(${schoolOfShuffleBg})`}}>
+            <div id="shuffle" className="landing_category" style={{backgroundImage: `url(${schoolOfShuffleBg})`}}>
                 <img alt={"about_image_sos"} className="about_image_sos" src={schoolOfShuffleImg} fluid></img>
             </div>
 
