@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: "GothamBlack";
+  src: local("GothamBlack"),
+   url('../src/Assets/fonts/GOTHAM-BLACK.OTF') format("truetype");
+  font-weight: 500;
+  }
+@font-face {
+  font-family: "GothamBold";
+  src: local("GothamBold"),
+    url("../src/Assets/fonts/GOTHAM-BOLD.OTF") format("truetype");
+  font-weight: bold;
+  }
+
+  
