@@ -34,6 +34,9 @@
      flex: 0.4;
      animation: shuffle 1s ease  infinite;
  }
+ .menu-logo img {
+     height: 100px;
+ }
 
  @keyframes shuffle {
     0%   {transform: translateX(0px);}
@@ -93,9 +96,11 @@
 }
 
 .fa-bars {
-    color:#000
+    color:#fff
 }
-
+.fa-times {
+    color: #fff;
+}
 .nav-links-mobile {
     display: none;
 }
@@ -108,7 +113,7 @@
 @media screen and (max-width : 960px) {
 
     .NavbarItems {
-        position: relative;
+        position: fixed;
     }
     .nav-menu {
         display: flex;
@@ -152,5 +157,9 @@
         transform: translate(-100%,40%);
         font-size: 1.8rem;
         cursor: pointer;
+    }
+
+    .menu-logo img {
+        height: 80px;
     }
     }

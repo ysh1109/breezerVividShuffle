@@ -26,7 +26,7 @@ const Navbar = () => {
         return(
            <nav className={headerbg?"NavbarItems activeHeader":"NavbarItems"} >
                 <div className="menu-logo">
-                   <img src={logo} style={{height:100}}/>
+                   <img src={logo}/>
                 </div>
                <div className="menu-icon" onClick={()=>handleClick()}>
                    
