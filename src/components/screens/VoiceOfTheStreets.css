@@ -1,0 +1,84 @@
+body{
+	background-size:cover;
+}
+.VidContainer{
+	margin:auto;
+	padding: 15px 20px;
+	border-radius: 15px;
+	margin-bottom: 90px;
+
+}
+.VidContainer iframe{
+	width: 700px;
+	height: 400px;
+}
+.VidContainer p{
+    font-family: GothamBold;
+	color:white;
+	width: 700px;
+}
+.vots_container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.vots_flex{
+	margin: auto;
+}
+.vots_title_image{
+	margin: auto;
+	width: 600px;
+	padding: 10px;
+}
+.vid_flex{
+	display:flex;
+	flex-direction: column;
+}
+@media screen and (max-width : 768px) {
+	body{
+		background-attachment:fixed;
+	}
+	.VidContainer iframe{
+		width: 500px;
+		height: 285px;
+	}
+	.VidContainer p{
+		width: 500px;
+	}
+.vots_title_image{
+	margin: auto;
+	width: 400px;
+	padding: 10px;
+}
+	.faq_image{
+		margin-top: 10px;
+	}
+}
+@media screen and (max-width : 568px) {
+	.VidContainer iframe{
+		width: 300px;
+		height: 185px;
+	}
+	.VidContainer p{
+		width: 300px;
+	}
+.vots_title_image{
+	margin: auto;
+	width: 300px;
+	padding: 10px;
+}
+}
+@media screen and (max-width : 368px) {
+	.VidContainer iframe{
+		width: 250px;
+		height: 185px;
+	}
+	.VidContainer p{
+		width: 250px;
+	}
+	.vots_title_image{
+		margin: auto;
+		width: 250px;
+		padding: 10px;
+	}
+}

@@ -1,6 +1,5 @@
 .NavbarItems {
     height:110px;
-    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,35 +14,25 @@
     box-shadow: 0 2px 20px white;
     border-bottom: 1px solid white;
 }
-.navbar-logo {
-   
-}
 
 
 .nav-menu {
     display: flex;
-    justify-content: space-evenly;
     width: 100%;
   
 }
 .menu-logo {
-    height: 100%;
+     height: 100%;
      display: flex;
      justify-content: center;
      align-items: center;
-     flex: 0.4;
+     flex: 0.3;
      animation: shuffle 1s ease  infinite;
  }
  .menu-logo img {
      height: 100px;
  }
 
- @keyframes shuffle {
-    0%   {transform: translateX(0px);}
-    25%  {transform: translateX(5px);}
-    50%  {transform: translateX(0px);}
-    100% {transform: translateX(-5px);}
-  }
  .menu-list {
      flex: 0.7;
      height: 100%;
@@ -51,37 +40,35 @@
      justify-content: center;
      align-items: center;
  }
-.nav-menu div {
-  font-family: GothamBold;
+ @keyframes shuffle {
+    0% {transform: scale(1)}
+    25%   {transform: scale(1.02)}
+    50% {transform: scale(1)}
+    75%   {transform: scale(1.02)}
+    100% {transform: scale(1)}
+  }
+.nav-menu li {
   font-size: 18px;
+	list-style:none;
   display: flex;
   color: white;
   align-items: center;
+	padding: 0px 12px;
   }
 
-  .nav-menu div a{
+  .nav-menu li a, .nav-menu li span{
     font-family: GothamBold;
     font-size: 18px;
     color: white;
+	cursor:pointer;
     }
 
   dl, ol, ul {
    margin-bottom: 0 !important;
  }
- .navbar_register {
-     background-color: #f1d31c;
-     padding: 10px 20px;
-     border-radius: 5px;
-     width: fit-content;
+ .navbar_register img{
+	 width: 170px;
  }
- .navbar_register span {
-    font-family: GothamBold;
-    font-weight: bold;
-    color: #fff;
-    font-size: 18px;
-    letter-spacing: 1.5px;
-
-}
     
 .nav-links {
     color:white;
@@ -107,14 +94,21 @@
 
 .menu-icon {
     display: none;
-
 }
 
-@media screen and (max-width : 960px) {
+@media screen and (max-width : 1037px) {
 
     .NavbarItems {
         position: fixed;
     }
+	.menu-logo {
+	     height: 100%;
+	     display: flex;
+	     justify-content: center;
+	     align-items: center;
+	     flex: 0.8;
+	     animation: shuffle 1s ease  infinite;
+	 }
     .nav-menu {
         display: flex;
         flex-direction: column;
@@ -144,7 +138,7 @@
         align-items: center;
     }
 
-    .nav-menu.active div {
+    .nav-menu.active li {
         display: flex;
         justify-content: center;
     }
@@ -158,8 +152,4 @@
         font-size: 1.8rem;
         cursor: pointer;
     }
-
-    .menu-logo img {
-        height: 80px;
-    }
-    }
+}

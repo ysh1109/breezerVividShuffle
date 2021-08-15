@@ -1,15 +1,20 @@
 
 import './App.css';
-import React,{ useEffect,useState } from 'react';
+import React, {useState} from 'react';
 import Navbar from '../src/components/navbar/Navbar'
 import Landing from './components/screens/Landing';
-function App() {
+import FAQ from './components/screens/FAQ.js';
+import VoiceOfTheStreets from './components/screens/VoiceOfTheStreets.js'; 
 
-  const [scroll,setScroll] = useState(0)
+
+function App() {
+  const [activeScreen, setActiveScreen] = useState(0)
   return (
     <div className="App">
-      <Navbar/>
-      <Landing/>
+      <Navbar activeScreen={activeScreen} setActiveScreen={setActiveScreen}/>
+	  {activeScreen === 0 && <Landing />}
+	  {activeScreen === 1 && <VoiceOfTheStreets/>}
+	  {activeScreen === 2 && <FAQ />}
     </div>
   );
 }
