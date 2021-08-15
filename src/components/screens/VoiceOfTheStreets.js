@@ -7,7 +7,7 @@ import VideoList from '../../Assets/vidList.js';
 
 const VidContainer = props => {
 	return (
-		<div className={"VidContainer"} style={{backgroundColor:props.backgroundColor}}>
+		<div data-aos="zoom-in-up" className={"VidContainer"} style={{backgroundColor:props.backgroundColor}}>
 			<iframe className="YoutubePlayer" frameBorder="0" src={props.videoID}></iframe>
 			<p>{props.vidText}</p>
 		</div>

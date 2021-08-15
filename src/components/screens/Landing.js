@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React,{useEffect, Suspense} from 'react'
 import './Landing.css'
 import Banner from '../../Assets/Banner/banner-02.png'
 import { Carousel } from 'react-bootstrap';
@@ -30,16 +30,20 @@ import youtube from '../../Assets/categories/youtube.svg'
 import AOS from 'aos';
 import {InstagramOutlined} from '@ant-design/icons'
 import "aos/dist/aos.css"
-function Landing() {
+const AboutSection = React.lazy(() => import('./About.js'));
 
+function Landing(props) {
   useEffect(()=>{
     AOS.init({
+<<<<<<< HEAD
         duration : 3000
+=======
+        duration : 1500
+>>>>>>> 89ea0851da7b3ba4fe3c6e7c9a002b323293da87
       });
   },[])
-    
     return (
-        <div>
+        <div >
             <div className="landing_banner">
                 <Carousel>
                     <Carousel.Item>
@@ -66,32 +70,9 @@ function Landing() {
                    
                 </div>
             </div>
-            <div id="about" className="landing_about" style={{backgroundImage: `url(${bg_about})`}}>
-                <div data-aos="flip-up" className="landing_about_title">
-                    <h2>ABOUT BVS</h2>
-                </div>
-                <div className="landing_about_content">
-                    <div className="landing_about_content_text" >
-                        <p data-aos="fade-right">
-                     		BREEZER Vivid Shue steps into its 5th year as India’s biggest
-    						hip-hop league. Through the seasons, we’ve provided a stage
-    						for the community to showcase talent, build skill and share the
-    						love for all things hip-hop. We’re coming to you alongside the
-    						biggest names in the industry to find the country’s best Breakers
-    						Poppers, Rappers, Grati Artists and Showcase Crews and form
-    						the ultimate league. Get ready to be a part of performances, battles,
-    						masterclasses, and the Shue fam. This is the home of hip-hop
-    						where we rep the <span className={"trendingText"}>#VoiceOfTheStreets</span> and <span className={"trendingText"}>#LiveLifeInColour.</span>
-                        </p>
-                    </div>
-                    <div className="landing_about_content_image" >
-                     <img alt={"about_image"} className="about_image" data-aos="fade-left" src={aboutIllustrations} fluid></img>
-                        
-                    </div>
-                </div>
-            </div>
-
-
+			<Suspense fallback={()=><></>}>
+				<AboutSection {...props}/>
+			</Suspense>
             <div style={{backgroundImage:`url(${bg_ticker})`}} className={"floatingTextContainer"}>
                 <div className="marquee_container" width="100%" direction="left">
                     <div className="marquee_text" >
@@ -121,7 +102,7 @@ function Landing() {
                 </div>
             </div>
 
-            <div  className="landing_shuffle" style={{backgroundImage: `url(${bg_about})`}}>
+            <div className="landing_shuffle" style={{backgroundImage: `url(${bg_about})`}}>
                 <div data-aos="flip-up" className="landing_shuffle_title">
                     <h2>SHUFFLE AMBASSADORS</h2>
                 </div>
@@ -178,9 +159,9 @@ function Landing() {
                 
             </div>
             <div className="landing_last_social">
-            <img alt={"Facebook"} className="social_media" src={facebook} fluid></img>
-            <img alt={"Youtube"} className="social_media" src={youtube} fluid></img>
-            <img alt={"Youtube"} className="social_media" src={youtube01} fluid></img>
+            	<img alt={"Facebook"} className="social_media" src={facebook} fluid></img>
+            	<img alt={"Youtube"} className="social_media" src={youtube} fluid></img>
+            	<img alt={"Youtube"} className="social_media" src={youtube01} fluid></img>
             </div>
 
         </div>

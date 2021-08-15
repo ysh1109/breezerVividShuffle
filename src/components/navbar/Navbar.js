@@ -6,6 +6,7 @@ import Register from '../../Assets/categories/register.svg';
 const Navbar = props => {
     const [clicked,setClicked] = useState(false)
     const [headerbg,setHeaderbg] = useState(false)
+	
     const handleClick = () => {
         setClicked(!clicked)
     }
@@ -23,13 +24,35 @@ const Navbar = props => {
 		if(props.activeScreen !== 0)
 			props.setActiveScreen(0);
 	}
+  	const scrollAboutToTop = () => {
+		MoveToFirst();
+		window.scrollBy(0, props.abt - 110);
+  	}
+  	const scrollCategoryToTop = () => {
+		MoveToFirst();
+		window.scrollBy(0, props.cat - 110);
+  	}
+  	const scrollShuffleToTop = () => {
+		MoveToFirst();
+		window.scrollBy(0, props.vots - 110);
+  	}
     useEffect(()=>{
         window.addEventListener('scroll',handleScroll)
+		window.onscroll = () => {
+			if(document.getElementById("about"))
+			{
+				props.setAbt(document.getElementById("about").getBoundingClientRect().top);
+				props.setCat(document.getElementById("category").getBoundingClientRect().top);
+				props.setVots(document.getElementById("shuffle").getBoundingClientRect().top);
+			}
+		}
     },[])
     return (
        <nav className={headerbg?"NavbarItems activeHeader":"NavbarItems"} style={{position:props.activeScreen === 0 ? 'fixed':'relative'}} >
             <div className="menu-logo">
-               <img alt={"logo"} src={logo} style={{height:100}}/>
+			<img alt={"logo"} onClick={()=>{
+				window.scrollTo(0,0);
+			}} src={logo} style={{height:100}}/>
             </div>
            <div className="menu-icon" onClick={handleClick}>
                
@@ -37,11 +60,11 @@ const Navbar = props => {
             </div>
            <div className="menu-list" >
              <div className={clicked?'nav-menu active':'nav-menu'}>
-                <li><a  href="#about" onClick={MoveToFirst}>About</a></li>
-                <li><a  href="#category" onClick={MoveToFirst}>Categories</a></li>
-                <li><a href="#shuffle" onClick={MoveToFirst}>School of Shuffle</a></li>
-                <li><span onClick={() => props.setActiveScreen(1)} >Voice of the streets</span></li>
-                <li><span onClick={() => props.setActiveScreen(2)} >FAQs</span></li>
+                <li><span onClick={scrollAboutToTop}>About</span></li>
+                <li><span onClick={scrollCategoryToTop}>Categories</span></li>
+                <li><span onClick={scrollShuffleToTop}>School of Shuffle</span></li>
+                <li><span onClick={() => {props.setActiveScreen(1); setClicked(false)}} >Voice of the streets</span></li>
+                <li><span onClick={() => {props.setActiveScreen(2); setClicked(false)}} >FAQs</span></li>
                 <li className="navbar_register"><img alt={"Register"} src={Register} /></li>
              </div>
            </div>
