@@ -19,6 +19,7 @@
 .nav-menu {
     display: flex;
     width: 100%;
+    justify-content: center;
   
 }
 .menu-logo {
@@ -82,16 +83,8 @@
     transition: all 02.s ease-out;
 }
 
-<<<<<<< HEAD
-.fa-bars {
-    color:#fff
-}
-.fa-times {
-    color: #fff;
-=======
 .fa-bars, .fa-times{
     color:#fff
->>>>>>> 89ea0851da7b3ba4fe3c6e7c9a002b323293da87
 }
 .nav-links-mobile {
     display: none;
@@ -111,7 +104,7 @@
 	     display: flex;
 	     justify-content: center;
 	     align-items: center;
-	     flex: 0.8;
+	     flex: 0.2;
 	     animation: shuffle 1s ease  infinite;
 	 }
     .nav-menu {
@@ -156,7 +149,7 @@
         display: block;
         position: absolute;
         top:0;
-        right: 0;
+        right: 30px;
         transform: translate(-100%,40%);
         font-size: 1.8rem;
         cursor: pointer;

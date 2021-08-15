@@ -27,10 +27,20 @@ body{
 	flex-direction: row;
 }
 .faq_image{
-	width:300px;
+	width:450px;
 	padding: 5px;
 }
+@media screen and (max-width : 1700px) {
+	.faq_image{
+		width:350px;
+		padding: 5px;
+	}
+}
 @media screen and (max-width : 768px) {
+	.faq_image{
+		width:300px;
+		padding: 5px;
+	}
 	body{
 		background-attachment:fixed;
 	}
@@ -38,3 +48,4 @@ body{
 		margin-top: 10px;
 	}
 }
+

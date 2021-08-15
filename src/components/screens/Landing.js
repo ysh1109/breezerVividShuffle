@@ -35,11 +35,7 @@ const AboutSection = React.lazy(() => import('./About.js'));
 function Landing(props) {
   useEffect(()=>{
     AOS.init({
-<<<<<<< HEAD
-        duration : 3000
-=======
         duration : 1500
->>>>>>> 89ea0851da7b3ba4fe3c6e7c9a002b323293da87
       });
   },[])
     return (
