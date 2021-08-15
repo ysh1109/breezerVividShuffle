@@ -45,13 +45,13 @@
     100% {transform: scale(1)}
   }
 .nav-menu li {
-  font-size: 18px;
+  	font-size: 18px;
 	list-style:none;
-  display: flex;
-  color: white;
-  align-items: center;
+  	display: flex;
+  	color: white;
+  	align-items: center;
 	padding: 0px 12px;
-  }
+}
 
   .nav-menu li a, .nav-menu li span{
     font-family: GothamBold;
@@ -79,8 +79,8 @@
     transition: all 02.s ease-out;
 }
 
-.fa-bars {
-    color:#000
+.fa-bars, .fa-times{
+    color:#fff
 }
 
 .nav-links-mobile {
@@ -133,9 +133,13 @@
         align-items: center;
     }
 
+    .nav-menu li {
+		padding:20px;
+    }
     .nav-menu.active li {
         display: flex;
         justify-content: center;
+		padding:20px;
     }
    
     .menu-icon {

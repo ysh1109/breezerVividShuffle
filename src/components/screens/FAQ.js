@@ -25,18 +25,18 @@ export default props => {
 				<img className="title_image" alt={"FAQ"} src={TitleImage} />	
 			</div>
 			<div className={"image_flex"} >
-				<img className="faq_image" alt={"faq1"} src={Card1} />	
-				<img className="faq_image" alt={"faq1"} src={Card2} />	
-				<img className="faq_image" alt={"faq1"} src={Card3} />	
-				<img className="faq_image" alt={"faq1"} src={Card4} />	
-				<img className="faq_image" alt={"faq1"} src={Card5} />	
-				<img className="faq_image" alt={"faq1"} src={Card6} />	
-				<img className="faq_image" alt={"faq1"} src={Card7} />	
-				<img className="faq_image" alt={"faq1"} src={Card8} />	
-				<img className="faq_image" alt={"faq1"} src={Card9} />	
-				<img className="faq_image" alt={"faq1"} src={Card10} />	
-				<img className="faq_image" alt={"faq1"} src={Card11} />	
-				<img className="faq_image" alt={"faq1"} src={Card12} />	
+				<img  data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card1} />	
+				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card2} />	
+				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card3} />	
+				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card4} />	
+				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card5} />	
+				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card6} />	
+				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card7} />	
+				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card8} />	
+				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card9} />	
+				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card10} />	
+				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card11} />	
+				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card12} />	
 			</div>
 		</div>
 	)
