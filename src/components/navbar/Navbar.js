@@ -52,6 +52,7 @@ const Navbar = props => {
             <div className="menu-logo">
 			<img alt={"logo"} onClick={()=>{
 				window.scrollTo(0,0);
+                props.setActiveScreen(0)
 			}} src={logo} style={{height:100}}/>
             </div>
            <div className="menu-icon" onClick={handleClick}>

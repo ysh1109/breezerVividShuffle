@@ -36,6 +36,12 @@ body{
 		padding: 5px;
 	}
 }
+@media screen and (max-width : 1320px) {
+	.faq_image{
+		width:250px;
+		padding: 5px;
+	}
+}
 @media screen and (max-width : 768px) {
 	.faq_image{
 		width:300px;

@@ -20,6 +20,7 @@ import ambassador6 from '../../Assets/ambassdor/MainPage_jpgs-19.png'
 import schoolOfShuffleBg from '../../Assets/backgrounds/schoolOfShuffle-08.png'
 import schoolOfShuffleImg from '../../Assets/illustrations/SVG/schoolOfShuffle.svg'
 import joinSquadbg from '../../Assets/backgrounds/join_squad.png'
+import shuffleAmbassdorBg from '../../Assets/backgrounds/bg04-02.png'
 import infobg from '../../Assets/backgrounds/last_bg-11.png'
 import lastbg from '../../Assets/backgrounds/bg_last-02.png'
 import submitButton from '../../Assets/illustrations/button_submit_1.svg'
@@ -28,6 +29,9 @@ import facebook from '../../Assets/categories/facebook.svg'
 import youtube01 from '../../Assets/categories/youtube01.svg'
 import youtube from '../../Assets/categories/youtube.svg'
 import AOS from 'aos';
+import star from '../../Assets/illustrations/star_mainPage.svg'
+import shuffle_title from '../../Assets/illustrations/shuffle_ambassador_pattern.svg'
+import videobg from '../../Assets/ambassdor/videobg.mp4'
 import {InstagramOutlined} from '@ant-design/icons'
 import "aos/dist/aos.css"
 const AboutSection = React.lazy(() => import('./About.js'));
@@ -37,31 +41,22 @@ function Landing(props) {
     AOS.init({
         duration : 1500
       });
+
+      const video = document.getElementById('video_bg')
   },[])
     return (
         <div >
             <div className="landing_banner">
-                <Carousel>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={Banner}
-                        alt="First slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={Banner}
-                        alt="Second slide"
-                        />
-                    </Carousel.Item>
-                </Carousel>
+                <video id="video_bg" playsinline="playsinline" controls style={{width:'100%'}} preload={true} muted autoPlay={true} loop="loop">
+                     <source src={videobg} type="video/mp4"></source>
+                </video>
             </div>
             <div style={{backgroundImage:`url(${bg_ticker})`}} className={"floatingTextContainer"}>
                 <div className="marquee_container" width="100%" direction="left">
                     <div className="marquee_text" >
-                        Updates: How to WIN 2 MILLION//Linked to Article Page
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,paddingRight:5}} fluid></img>
+                          Updates: How to WIN 2 MILLION//Linked to Article Page  
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,paddingLeft:5}} fluid></img>
                      </div>
                    
                 </div>
@@ -72,8 +67,12 @@ function Landing(props) {
             <div style={{backgroundImage:`url(${bg_ticker})`}} className={"floatingTextContainer"}>
                 <div className="marquee_container" width="100%" direction="left">
                     <div className="marquee_text" >
-                        SOS Schedule + Workshops Dates + Other Competitions                        
+                     <img alt={"about_image"} src={star} style={{width:30,height:30,paddingRight:5}} fluid></img>
+                        SOS Schedule + Workshops Dates + Other Competitions        
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,paddingLeft:5}} fluid></img>                   
                      </div>
+                    
+                     
                    
                 </div>
             </div>
@@ -98,10 +97,10 @@ function Landing(props) {
                 </div>
             </div>
 
-            <div className="landing_shuffle" style={{backgroundImage: `url(${bg_about})`}}>
+            <div className="landing_shuffle" style={{backgroundImage: `url(${shuffleAmbassdorBg})`}}>
                 <div data-aos="flip-up" className="landing_shuffle_title">
-                    <h2>SHUFFLE AMBASSADORS</h2>
-                </div>
+                        <h2>SHUFFLE AMBASSADORS</h2>
+                     </div>
                 <div className="landing_shuffle_content">
                     <div className="landing_category_content_one">
                         <img alt={"about_image_1"} data-aos="fade-up" className="about_image_1" src={ambassador5} fluid></img>

@@ -30,6 +30,13 @@ export default props => {
 			<div className={"vots_flex"}>
 				<img className="vots_title_image" alt={"FAQ"} src={TitleImage} />	
 			</div>
+			<div className="vots_text_div">
+				<p className="vots_text">
+				We’re celebrating 5 years at the house of Hip-Hop!<br/>
+				BREEZER Vivid Shuffle has always provided a stage for the community to thrive.
+				This year, we’re here to bring home the Voice Of The Streets and rep everything the culture stands for.
+				</p>
+			</div>
 			<div className={"vid_flex"} >
 				<Vids />
 			</div>

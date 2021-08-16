@@ -80,6 +80,7 @@
     height: fit-content;
     background-size: cover;
     flex-direction: column;
+    background-position: bottom;
 }
 
 
@@ -150,6 +151,7 @@
 }
 .trendingText{
 	color:#ffca06;
+    font-family: GothamBlack;
 	text-decoration:underline;
 	font-weight:'bold';
 }
@@ -238,7 +240,8 @@ padding-right: 5px;
 .landing_last {
     display: flex;
     flex-direction: column;
-    background-size: contain;
+    background-size: cover;
+    background-position: bottom;
     height: 40vh;
     font-family: GothamBlack;
     font-weight: bold;
@@ -284,12 +287,12 @@ padding-right: 5px;
     font-family: GothamBlack;
     color: #000;
 	height: 50px;
-	width: 100%;
+	width: 125%;
 	font-size: 24px;
 	display: flex;
 	align-items: center;
-	-moz-animation: slideshow 10s linear infinite;
-	-webkit-animation: slideshow 10s linear infinite;
+	-moz-animation: slideshow 20s linear infinite;
+	-webkit-animation: slideshow 20s linear infinite;
 }
 @keyframes slideshow{
 	0% {  -webkit-transform: translateX(100%) }
