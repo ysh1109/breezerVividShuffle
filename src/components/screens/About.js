@@ -14,7 +14,7 @@ export default props => {
 	return (
        <div id="about" className="landing_about" style={{backgroundImage: `url(${bg_about})`}}>
            <div data-aos="flip-up" className="landing_about_title">
-                    <h2>ABOUT BVS</h2>
+                    <h2>ABOUT</h2>
                 </div>
                 <div className="landing_about_content">
                     <div className="landing_about_content_text" >

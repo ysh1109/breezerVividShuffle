@@ -156,9 +156,16 @@ function Landing(props) {
                 
             </div>
             <div className="landing_last_social">
-            	<img alt={"Facebook"} className="social_media" src={facebook} fluid></img>
-            	<img alt={"Youtube"} className="social_media" src={youtube} fluid></img>
-            	<img alt={"Youtube"} className="social_media" src={youtube01} fluid></img>
+                <a href="https://www.facebook.com/breezervividshuffle/" target="_blank">
+                    <img alt={"Facebook"} className="social_media" src={facebook} fluid>
+                    </img>
+                </a>
+                <a href="https://www.instagram.com/breezervividshuffle/?hl=en" target="_blank">
+            	    <img alt={"Youtube"} className="social_media" src={youtube} fluid></img>
+                </a>  
+                <a href="https://www.youtube.com/channel/UCkvaGaPik8kNUlUTY_QLtuA" target="_blank">    
+            	    <img alt={"Youtube"} className="social_media" src={youtube01} fluid></img>
+                </a> 
             </div>
 
         </div>
