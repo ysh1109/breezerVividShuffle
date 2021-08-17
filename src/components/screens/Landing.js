@@ -28,7 +28,7 @@ import shoe from '../../Assets/illustrations/SVG/shoe.svg'
 import facebook from '../../Assets/categories/facebook.svg'
 import youtube01 from '../../Assets/categories/youtube01.svg'
 import shuffleTitle from '../../Assets/illustrations/shuffle_title.svg'
-import youtube from '../../Assets/categories/youtube.svg'
+import spotify from '../../Assets/spotify.svg'
 import AOS from 'aos';
 import star from '../../Assets/illustrations/star_mainPage.svg'
 import shuffle_title from '../../Assets/illustrations/shuffle_ambassador_pattern.svg'
@@ -161,7 +161,7 @@ function Landing(props) {
                     </img>
                 </a>
                 <a href="https://www.instagram.com/breezervividshuffle/?hl=en" target="_blank">
-            	    <img alt={"Youtube"} className="social_media" src={youtube} fluid></img>
+            	    <img alt={"Youtube"} className="social_media" src={spotify} fluid></img>
                 </a>  
                 <a href="https://www.youtube.com/channel/UCkvaGaPik8kNUlUTY_QLtuA" target="_blank">    
             	    <img alt={"Youtube"} className="social_media" src={youtube01} fluid></img>

@@ -15,12 +15,16 @@ import Card12 from '../../Assets/faqImages/card12.svg';
 import TitleImage from '../../Assets/faqImages/faq_title.svg';
 import bottle from '../../Assets/faqImages/bottle.svg';
 import FAQ_BG from '../../Assets/backgrounds/faq_background.png';
+import facebook from '../../Assets/categories/facebook.svg'
+import youtube01 from '../../Assets/categories/youtube01.svg'
+import spotify from '../../Assets/spotify.svg'
 
 export default props => {
 	React.useEffect(() => {
 		document.body.style.backgroundImage = `url('${FAQ_BG}')`;
 	},[]);
 	return (
+		<div>
 		<div className={"faq_container"}>
 			<div className={"faq_flex"}>
 				<img className="title_image" alt={"FAQ"} src={TitleImage} />	
@@ -42,6 +46,20 @@ export default props => {
 				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card11} />	
 				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card12} />	
 			</div>
+		</div>
+		<div className="faq_last_div"></div>
+		<div className="landing_last_sociall">
+                <a href="https://www.facebook.com/breezervividshuffle/" target="_blank">
+                    <img alt={"Facebook"} className="social_media" src={facebook} fluid>
+                    </img>
+                </a>
+                <a href="https://www.instagram.com/breezervividshuffle/?hl=en" target="_blank">
+            	    <img alt={"Youtube"} className="social_media" src={spotify} fluid></img>
+                </a>  
+                <a href="https://www.youtube.com/channel/UCkvaGaPik8kNUlUTY_QLtuA" target="_blank">    
+            	    <img alt={"Youtube"} className="social_media" src={youtube01} fluid></img>
+                </a> 
+            </div>
 		</div>
 	)
 }

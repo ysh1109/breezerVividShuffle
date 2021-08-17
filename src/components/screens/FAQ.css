@@ -6,6 +6,7 @@ body{
 	
 }
 .faq_container{
+	padding: 60px 0px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -25,10 +26,15 @@ body{
 .faq_flex{
 	display:flex;
 	flex-direction: row;
+	padding: 0px 0px 60px 0px;
 }
 .faq_image{
 	width:450px;
 	padding: 5px;
+	margin-top: 30px;
+}
+.mt02{
+	margin-top: 30px;
 }
 .random_faq{
 	height: 150px;
@@ -72,3 +78,20 @@ body{
 	}
 }
 
+.faq_last_div{
+	background-image: url('../../Assets/faqImages/faqBG-01-01.png');
+	height: 80px;
+	background-size: cover;
+}
+.landing_last_sociall {
+    display: flex;
+    height: 100px;
+    margin-top: -5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #231F20;
+}
+.social_media {
+    width: 50px;
+    margin-right:15px ;
+}
