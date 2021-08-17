@@ -3,6 +3,8 @@ import './Navbar.css';
 // import logo from '../../Assets/logo/BVS_Logo.png'
 import logo from '../../Assets/logo/bvs_logo.svg';
 import Register from '../../Assets/categories/register.svg';
+import { Menu, Dropdown } from 'antd';
+
 const Navbar = props => {
     const [clicked,setClicked] = useState(false)
     const [headerbg,setHeaderbg] = useState(false)
@@ -36,6 +38,17 @@ const Navbar = props => {
 		MoveToFirst();
 		window.scrollBy(0, props.vots - 110);
   	}
+      const menu = (
+        <Menu>
+          <Menu.Item key="0">
+            <a href="#">Participation</a>
+          </Menu.Item>
+          <Menu.Item key="1">
+            <a href="#">School of Shuffle</a>
+          </Menu.Item>
+          <Menu.Divider />
+        </Menu>
+      );
     useEffect(()=>{
         window.addEventListener('scroll',handleScroll)
 		window.onscroll = () => {
@@ -66,7 +79,11 @@ const Navbar = props => {
                 <li><span onClick={scrollShuffleToTop}>School of Shuffle</span></li>
                 <li><span onClick={() => {props.setActiveScreen(1); setClicked(false)}} >Voice Of The Streets</span></li>
                 <li><span onClick={() => {props.setActiveScreen(2); setClicked(false)}} >FAQs</span></li>
-                <li className="navbar_register"><img alt={"Register"} src={Register} /></li>
+                <li className="navbar_register">
+                    <Dropdown overlay={menu} trigger={['hover']}> 
+                        <img alt={"Register"} src={Register} />
+                    </Dropdown> 
+                </li>
              </div>
            </div>
          
