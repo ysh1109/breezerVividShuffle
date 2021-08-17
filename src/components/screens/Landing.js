@@ -35,6 +35,7 @@ import shuffle_title from '../../Assets/illustrations/shuffle_ambassador_pattern
 import videobg from '../../Assets/ambassdor/videobg.mp4'
 import {InstagramOutlined} from '@ant-design/icons'
 import "aos/dist/aos.css"
+
 const AboutSection = React.lazy(() => import('./About.js'));
 
 function Landing(props) {

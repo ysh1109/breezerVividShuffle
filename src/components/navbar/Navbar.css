@@ -44,6 +44,17 @@
      justify-content: center;
      align-items: center;
  }
+ .navbar_register:hover {
+    cursor: pointer;
+    
+ }
+ .ant-dropdown ul li {
+     font-size: 16px;
+     font-family: GothamMedium;
+ }
+ .ant-dropdown ul li:hover {
+     border-left: 5px solid yellow;
+ }
  @keyframes shuffle {
     0% {transform: scale(1)}
     25%   {transform: scale(1.02)}
