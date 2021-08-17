@@ -13,6 +13,7 @@ import Card10 from '../../Assets/faqImages/card10.svg';
 import Card11 from '../../Assets/faqImages/card11.svg';
 import Card12 from '../../Assets/faqImages/card12.svg';
 import TitleImage from '../../Assets/faqImages/faq_title.svg';
+import bottle from '../../Assets/faqImages/bottle.svg';
 import FAQ_BG from '../../Assets/backgrounds/faq_background.png';
 
 export default props => {
@@ -25,7 +26,10 @@ export default props => {
 				<img className="title_image" alt={"FAQ"} src={TitleImage} />	
 			</div>
 			<div className={"image_flex"} >
-				<img  data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card1} />	
+				<div style={{position:'relative'}}>
+					<img  data-aos="zoom-in-up" className="random_faq" src={bottle} />	
+					<img  data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card1} />	
+				</div>
 				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card2} />	
 				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card3} />	
 				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card4} />	
