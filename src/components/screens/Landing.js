@@ -15,10 +15,10 @@ import ambassador1 from '../../Assets/ambassdor/MainPage_jpgs-14.png'
 import ambassador2 from '../../Assets/ambassdor/MainPage_jpgs-15.png'
 import ambassador3 from '../../Assets/ambassdor/MainPage_jpgs-16.png'
 import ambassador4 from '../../Assets/ambassdor/MainPage_jpgs-17.png'
-import ambassador5 from '../../Assets/ambassdor/MainPage_jpgs-18.png'
+import ambassador5 from '../../Assets/rajakumari.png'
 import ambassador6 from '../../Assets/ambassdor/MainPage_jpgs-19.png'
 import schoolOfShuffleBg from '../../Assets/backgrounds/schoolOfShuffle-08.png'
-import schoolOfShuffleImg from '../../Assets/illustrations/SVG/schoolOfShuffle.svg'
+import schoolOfShuffleImg from '../../Assets/sos_title.svg'
 import joinSquadbg from '../../Assets/backgrounds/join_squad.png'
 import shuffleAmbassdorBg from '../../Assets/backgrounds/bg04-02.png'
 import infobg from '../../Assets/backgrounds/last_bg-11.png'
@@ -27,6 +27,7 @@ import submitButton from '../../Assets/illustrations/button_submit_1.svg'
 import shoe from '../../Assets/illustrations/SVG/shoe.svg'
 import facebook from '../../Assets/categories/facebook.svg'
 import youtube01 from '../../Assets/categories/youtube01.svg'
+import shuffleTitle from '../../Assets/illustrations/shuffle_title.svg'
 import youtube from '../../Assets/categories/youtube.svg'
 import AOS from 'aos';
 import star from '../../Assets/illustrations/star_mainPage.svg'
@@ -55,7 +56,7 @@ function Landing(props) {
                 <div className="marquee_container" width="100%" direction="left">
                     <div className="marquee_text" >
                         <img alt={"about_image"} src={star} style={{width:30,height:30,paddingRight:5}} fluid></img>
-                          Updates: How to WIN 2 MILLION//Linked to Article Page  
+                          #LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon
                         <img alt={"about_image"} src={star} style={{width:30,height:30,paddingLeft:5}} fluid></img>
                      </div>
                    
@@ -68,8 +69,8 @@ function Landing(props) {
                 <div className="marquee_container" width="100%" direction="left">
                     <div className="marquee_text" >
                      <img alt={"about_image"} src={star} style={{width:30,height:30,paddingRight:5}} fluid></img>
-                        SOS Schedule + Workshops Dates + Other Competitions        
-                        <img alt={"about_image"} src={star} style={{width:30,height:30,paddingLeft:5}} fluid></img>                   
+                     #LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon
+                    <img alt={"about_image"} src={star} style={{width:30,height:30,paddingLeft:5}} fluid></img>                   
                      </div>
                     
                      
@@ -81,6 +82,7 @@ function Landing(props) {
             <div id="category" className="landing_category" style={{backgroundImage: `url(${bg_categories})`}}>
                 <div data-aos="flip-up" className="landing_category_title">
                     <h2>CATEGORIES</h2>
+                    {/* <img src={shuffleTitle}></img> */}
                 </div>
                 <div className="landing_category_content">
                     <div className="landing_category_content_one">
@@ -99,7 +101,7 @@ function Landing(props) {
 
             <div className="landing_shuffle" style={{backgroundImage: `url(${shuffleAmbassdorBg})`}}>
                 <div data-aos="flip-up" className="landing_shuffle_title">
-                        <h2>SHUFFLE AMBASSADORS</h2>
+                <img src={shuffleTitle} className="shuffle_Title_main"></img> 
                      </div>
                 <div className="landing_shuffle_content">
                     <div className="landing_category_content_one">
@@ -149,7 +151,7 @@ function Landing(props) {
             <div className="landing_last" style={{backgroundImage: `url(${lastbg})`,display:'flex'}}>
                 <div data-aos="flip-up" className="landing_handle_title" >
                     <h2 style={{color:'#3a539c'}}>FOLLOW US ON </h2>
-                    <InstagramOutlined style={{marginTop:-5,color:'#e3253e',fontSize:48}}/> <span className="last_handle">@brezeervividshuffle</span>
+                    <InstagramOutlined style={{marginTop:-5,color:'#fff',fontSize:48}}/> <span className="last_handle">@brezeervividshuffle</span>
                 </div>
                 
             </div>

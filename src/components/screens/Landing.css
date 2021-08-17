@@ -7,7 +7,7 @@
 .landing_about {
     display: flex;
     width: 100%;
-    height: 80vh;
+    padding: 50px 0px 50px 0px;
     background-size: cover;
     flex-direction: column;
 }
@@ -39,8 +39,8 @@
     /* align-items: center;; */
 }
 .landing_about_content_text p {
-    font-family: GothamBlack;
-    font-size: 18px;
+    font-family: GothamMedium;
+    font-size: 20px;
     color: white;
     width: 80%;
     text-align: left;
@@ -60,8 +60,10 @@
 }
 
 .about_image_sos{
-    height: 250px;
+    width: 700px;
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about_image_1{
@@ -77,6 +79,7 @@
 .landing_category {
     display: flex;
     width: 100%;
+    padding: 60px 0px;
     height: fit-content;
     background-size: cover;
     flex-direction: column;
@@ -91,8 +94,12 @@
     align-items: center;
     
 }
+.shuffle_Title_main{
+    max-width: 100%;
+    height: 62px;
+}
 .landing_category_title h2 {
-    font-family: GothamBlack;
+    font-family: RUBIKMONOONE-REGULAR;
     margin-top: 20px;
     color: #f26b28;
     font-size: 42px;
@@ -147,7 +154,7 @@
     flex:1;
     flex-direction: column;
 	justify-content: center;
-	height: 40vh;
+    padding: 60px 0px;
 }
 .trendingText{
 	color:#ffca06;
@@ -162,12 +169,13 @@
     align-items: center;
 }
 .landing_squad_title h2 {
-    font-family: GothamBlack;
+    font-family: RUBIKMONOONE-REGULAR;
     color: #8a2c74;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: bolder;
     letter-spacing: 2.5px;
     margin-top: 12px;
+    margin-bottom: 50px;
 padding-left    :5px ;
 padding-right: 5px;
 }
@@ -209,7 +217,9 @@ padding-right: 5px;
 }
 .last_handle {
     margin-left: 5px;
-    color: #e3253e;
+    color: #fff;
+    font-family: GothamBlack;
+    letter-spacing: 1.6px;
     text-decoration: underline;
     font-size: 24px;
 }
@@ -243,6 +253,7 @@ padding-right: 5px;
     background-size: cover;
     background-position: bottom;
     height: 40vh;
+    padding: 80px 0px;
     font-family: GothamBlack;
     font-weight: bold;
     flex-wrap: wrap;
@@ -284,11 +295,11 @@ padding-right: 5px;
 	width:100%;
 }
 .marquee_text {
-    font-family: GothamBlack;
-    color: #000;
+    font-family: GothamBold;
+    color: #572A76;
 	height: 50px;
 	width: 125%;
-	font-size: 24px;
+	font-size: 26px;
 	display: flex;
 	align-items: center;
 	-moz-animation: slideshow 20s linear infinite;

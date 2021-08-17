@@ -23,5 +23,17 @@ code {
     url("../src/Assets/fonts/GOTHAM-BOLD.OTF") format("truetype");
   font-weight: bold;
   }
+  @font-face {
+    font-family: "GothamMedium";
+    src: local("GothamBold"),
+      url("../src/Assets/fonts/GOTHAM-MEDIUM.OTF") format("truetype");
+
+    }
+    @font-face {
+      font-family: "RUBIKMONOONE-REGULAR";
+      src: local("RUBIKMONOONE-REGULAR"),
+        url("../src/Assets/fonts/RUBIKMONOONE-REGULAR.TTF") format("truetype");
+  
+      }
 
   

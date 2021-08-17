@@ -1,7 +1,7 @@
 import React from 'react';
 import './VoiceOfTheStreets.css';
 import Card1 from '../../Assets/faqImages/card1.svg';
-import TitleImage from '../../Assets/VoiceOfTheStreetImages/voice_of_street_title.svg';
+import TitleImage from '../../Assets/VoiceOfTheStreetImages/title_vos_1.svg';
 import VOTS_BG from '../../Assets/VoiceOfTheStreetImages/Voice_of_Streets_background.png';
 import VideoList from '../../Assets/vidList.js';
 

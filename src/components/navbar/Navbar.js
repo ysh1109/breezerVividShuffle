@@ -64,7 +64,7 @@ const Navbar = props => {
                 <li><span onClick={scrollAboutToTop}>About</span></li>
                 <li><span onClick={scrollCategoryToTop}>Categories</span></li>
                 <li><span onClick={scrollShuffleToTop}>School of Shuffle</span></li>
-                <li><span onClick={() => {props.setActiveScreen(1); setClicked(false)}} >Voice of the streets</span></li>
+                <li><span onClick={() => {props.setActiveScreen(1); setClicked(false)}} >Voice Of The Streets</span></li>
                 <li><span onClick={() => {props.setActiveScreen(2); setClicked(false)}} >FAQs</span></li>
                 <li className="navbar_register"><img alt={"Register"} src={Register} /></li>
              </div>
