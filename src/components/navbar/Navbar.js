@@ -80,7 +80,7 @@ const Navbar = props => {
                 <li><span onClick={() => {props.setActiveScreen(1); setClicked(false)}} >Voice Of The Streets</span></li>
                 <li><span onClick={() => {props.setActiveScreen(2); setClicked(false)}} >FAQs</span></li>
                 <li className="navbar_register">
-                    <Dropdown overlay={menu} trigger={['hover']}> 
+                    <Dropdown overlay={menu} trigger={['click']}> 
                         <img alt={"Register"} src={Register} />
                     </Dropdown> 
                 </li>
