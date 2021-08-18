@@ -10,6 +10,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	padding-bottom:110px ;
 }
 .image_flex{
 	display: flex;

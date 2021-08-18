@@ -124,11 +124,12 @@ const Navbar = props => {
 			<img alt={"logo"} onClick={()=>{
 				window.scrollTo(0,0);
 				setSelectedPage(null);
+                history.push('/')
 			}} src={logo} style={{height:100}}/>
 
                 
             </div>
-           <div className="menu-icon" onClick={handleClick}>
+            <div className="menu-icon" onClick={handleClick}>
                
              <i className={clicked?'fas fa-times':'fas fa-bars'}></i>
             </div>
