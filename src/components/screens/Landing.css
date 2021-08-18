@@ -327,7 +327,6 @@ textarea:focus, input:focus{
     outline: none;
     }
 
-
 @media only screen and (max-width: 950px) {
     .landing_about_content{
         display: flex;
@@ -418,7 +417,6 @@ textarea:focus, input:focus{
         top: -5vh;
     }
   }
-
   @media only screen and (max-width: 550px) {
     .shoe_image {
         width: 100px;
