@@ -6,7 +6,7 @@ body{
 	
 }
 .faq_container{
-	padding: 60px 0px;
+	padding-top: 110px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
