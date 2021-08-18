@@ -8,6 +8,7 @@ import { Menu, Dropdown } from 'antd';
 const Navbar = props => {
     const [clicked,setClicked] = useState(false)
     const [headerbg,setHeaderbg] = useState(false)
+    const [selectedPage,setSelectedPage] = useState(0)
 	
     const handleClick = () => {
         setClicked(!clicked)
@@ -74,11 +75,11 @@ const Navbar = props => {
             </div>
            <div className="menu-list" >
              <div className={clicked?'nav-menu active':'nav-menu'}>
-                <li><span onClick={scrollAboutToTop}>About</span></li>
-                <li><span onClick={scrollCategoryToTop}>Categories</span></li>
-                <li><span onClick={scrollShuffleToTop}>School of Shuffle</span></li>
-                <li><span onClick={() => {props.setActiveScreen(1); setClicked(false)}} >Voice Of The Streets</span></li>
-                <li><span onClick={() => {props.setActiveScreen(2); setClicked(false)}} >FAQs</span></li>
+                <li><span className={!selectedPage==0?"optionNav":"optionNav"} onClick={scrollAboutToTop}>About</span></li>
+                <li><span className={!selectedPage==1?"optionNav":"optionNav"} onClick={scrollCategoryToTop}>Categories</span></li>
+                <li><span className={!selectedPage==2?"optionNav":"optionNav"} onClick={scrollShuffleToTop}>School of Shuffle</span></li>
+                <li><span className={!selectedPage==3?"voiceNav":"voiceNav"} onClick={() => {props.setActiveScreen(1); setClicked(false);  setSelectedPage(3)}} >Voice Of The Streets</span></li>
+                <li><span className={!selectedPage==4?"faqNav":"faqNav active"} onClick={() => {props.setActiveScreen(2); setClicked(false);  setSelectedPage(4)}} >FAQs</span></li>
                 <li className="navbar_register">
                     <Dropdown overlay={menu} trigger={['click']}> 
                         <img alt={"Register"} src={Register} />

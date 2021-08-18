@@ -52,6 +52,7 @@
      font-size: 16px;
      font-family: GothamBold;
      font-weight: 700;
+     text-transform: uppercase;
  }
  .ant-dropdown ul li:hover {
      border-left: 5px solid yellow;
@@ -78,7 +79,21 @@
     color: white;
 	cursor:pointer;
     }
-
+    /* color:#572a75; */
+    /* color: #f08d23; */
+    
+    .optionNav:hover {
+        color: #f08d23;
+        font-weight: bold;
+    }
+    .voiceNav:hover {
+        color: #f08d23;
+        font-weight: bold;
+    }
+    .faqNav:hover {
+        color: #f08d23;
+        font-weight: bold;
+    }
   dl, ol, ul {
    margin-bottom: 0 !important;
  }

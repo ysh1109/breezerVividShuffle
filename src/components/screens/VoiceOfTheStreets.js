@@ -5,7 +5,9 @@ import TitleImage from '../../Assets/VoiceOfTheStreetImages/title_vos_1.svg';
 import VOTS_BG from '../../Assets/VoiceOfTheStreetImages/Voice_of_Streets_background.png';
 import VideoList from '../../Assets/vidList.js';
 import flames from '../../Assets/flames-01.png'
-
+import facebook from '../../Assets/categories/facebook.svg'
+import youtube01 from '../../Assets/categories/youtube01.svg'
+import spotify from '../../Assets/spotify.svg'
 const VidContainer = props => {
 	return (
 		<div data-aos="zoom-in-up" className={"VidContainer"} style={{backgroundColor:props.backgroundColor}}>
@@ -24,7 +26,7 @@ const Vids = props => {
 export default props => {
 	React.useEffect(() => {
 		document.body.style.backgroundImage = `url('${VOTS_BG}')`;
-		/* document.body.style.background = '../../Assets/VoiceOfTheStreetImages/Voice_of_Streets_background.png' */
+	 	document.body.style.backgroundRepeatY = 'repeat' 
 	},[]);
 	return (
 		<div className={"vots_container"}>
@@ -41,8 +43,27 @@ export default props => {
 			<div className={"vid_flex"} >
 				<Vids />
 			</div>
-			<div>
+			<div >
+				
+				
 				<img className="footer_image" src={flames}></img>
+				
+			</div>
+			<div style={{width:'100vw',backgroundColor:'#a45796',height:50,position:'relative',justifyContent:'center',display:'flex',marginTop:-5}}>
+				<div className="landing_last_social_vos">
+						<a href="https://www.facebook.com/breezervividshuffle/" target="_blank">
+							<img alt={"Facebook"} className="social_media" src={facebook} fluid>
+							</img>
+						</a>
+						<a href="https://open.spotify.com/user/25f6g1zp7uknzkpcsdobgyiyl?si=614fb9d2e1124683" target="_blank">
+							<img alt={"Youtube"} className="social_media" src={spotify} fluid></img>
+						</a>  
+						<a href="https://www.youtube.com/channel/UCkvaGaPik8kNUlUTY_QLtuA" target="_blank">    
+							<img alt={"Youtube"} className="social_media" src={youtube01} fluid></img>
+						</a> 
+						
+
+					</div>
 			</div>
 		</div>
 	)
