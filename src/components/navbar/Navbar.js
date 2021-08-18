@@ -141,7 +141,7 @@ const Navbar = props => {
                 <li className={selectedPage===3 ? "voiceNav-active":"voiceNav"}><span  onClick={() => {history.push('/voiceofthestreets'); window.scrollTo(0,0); setClicked(false); setSelectedPage(3)}} >Voice Of The Streets</span></li>
                 <li><span className={selectedPage===4 ? "faqNav-active":"faqNav"} onClick={() => {history.push('/faq');window.scrollTo(0,0);setClicked(false);setSelectedPage(4)}} >FAQs</span></li>
                 <li className="navbar_register">
-                    <Dropdown overlay={menu} trigger={['click']}> 
+                    <Dropdown overlay={menu} trigger={['hover']}> 
                         <img alt={"Register"} src={Register} />
                     </Dropdown> 
                 </li>
