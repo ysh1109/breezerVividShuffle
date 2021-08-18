@@ -307,6 +307,7 @@ padding-right: 5px;
 	/* background-image: url('../../Assets/backgrounds/bg_ticker-02.png'); */
 	overflow:hidden;
 	width:100%;
+    margin-top: -5px;
 }
 .marquee_text {
     font-family: GothamBold;
@@ -316,8 +317,8 @@ padding-right: 5px;
 	font-size: 26px;
 	display: flex;
 	align-items: center;
-	--moz-animation: slideshow 20s linear infinite;
-	--webkit-animation: slideshow 20s linear infinite;
+	-moz-animation: slideshow 20s linear infinite;
+	-webkit-animation: slideshow 20s linear infinite;
 }
 @keyframes slideshow{
 	0% {  -webkit-transform: translateX(100%) }

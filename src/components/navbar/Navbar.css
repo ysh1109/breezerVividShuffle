@@ -6,6 +6,7 @@
     font-size: 1.2rem;
     z-index: 100;
     width: 100%;
+    position: fixed;
 }
 .activeHeader {
     background-color: #000000;
@@ -125,7 +126,8 @@ dl, ol, ul {
 @media screen and (max-width : 1037px) {
 
     .NavbarItems {
-        position: fixed;
+        position: relative;
+        background-color: #000000;
     }
 	.menu-logo {
 	     height: 100%;

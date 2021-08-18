@@ -119,7 +119,7 @@ const Navbar = props => {
 		}
     },[])
     return (
-       <nav className={headerbg?"NavbarItems activeHeader":"NavbarItems"} style={{position:props.activeScreen === 0 ? 'fixed':'relative'}} >
+       <nav className={headerbg?"NavbarItems activeHeader":"NavbarItems"}  >
             <div className="menu-logo">
 			<img alt={"logo"} onClick={()=>{
 				window.scrollTo(0,0);

@@ -154,13 +154,23 @@ function Landing(props) {
                 </div>
                 <div className="landing_category_content">
                     <div className="landing_category_content_one">
-                        <img alt={"about_image"} data-aos="zoom-in-up" className="about_image" src={category1} fluid></img>
-                        <img alt={"about_image"} data-aos="zoom-in-up" className="about_image" src={category2} fluid></img>
-                        <img alt={"about_image"} data-aos="zoom-in-up" className="about_image" src={category3} fluid></img>
+                        <a href="/Graffiti.html">
+                            <img alt={"about_image"} data-aos="zoom-in-up" className="about_image" src={category1} fluid></img>
+                        </a>
+                        <a href="/Breaking.html">
+                             <img alt={"about_image"} data-aos="zoom-in-up" className="about_image" src={category2} fluid></img>
+                        </a>
+                        <a href="/Rap.html">
+                            <img alt={"about_image"} data-aos="zoom-in-up" className="about_image" src={category3} fluid></img>
+                        </a>
                     </div>
                     <div className="landing_category_content_two">
+                        <a href="/Showcase.html">
                          <img alt={"about_image"} data-aos="zoom-in-up" className="about_image" src={category4} fluid></img>
+                        </a>
+                        <a href="/Poppers.html">
                          <img alt={"about_image"} data-aos="zoom-in-up" className="about_image" src={category5} fluid></img>
+                        </a>
                     </div>
                 
                 
