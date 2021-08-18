@@ -217,6 +217,10 @@ padding-right: 5px;
     width: 200px;
     margin-top: 24px;
 }
+.submit_image_1:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
 .shoe_image {
     width: 150px;
     position: absolute;

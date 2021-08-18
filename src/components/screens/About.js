@@ -24,7 +24,7 @@ export default props => {
     						for the community to showcase talent, build skill and share the
     						love for all things hip-hop. We’re coming to you alongside the
     						biggest names in the industry to find the country’s best Breakers
-    						Poppers, Rappers, Graffiti Artists and Showcase Crews and form
+    						Poppers, Rappers, Graffiti Artists and Showcase Crews and form
     						the ultimate league. Get ready to be a part of performances, battles,
     						masterclasses, and the Shuffle fam. This is the home of hip-hop
     						where we rep the <span className="trendingText">#VoiceOfTheStreets</span> and <span className="trendingText">#LiveLifeInColour.</span>

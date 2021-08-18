@@ -1,4 +1,4 @@
-import React,{useEffect, Suspense} from 'react'
+import React,{useEffect, Suspense,useState} from 'react'
 import './Landing.css'
 import Banner from '../../Assets/Banner/banner-02.png'
 import { Carousel } from 'react-bootstrap';
@@ -35,10 +35,72 @@ import shuffle_title from '../../Assets/illustrations/shuffle_ambassador_pattern
 import videobg from '../../Assets/ambassdor/videobg.mp4'
 import {InstagramOutlined} from '@ant-design/icons'
 import "aos/dist/aos.css"
+import { message, Button, Space } from 'antd';
 
 const AboutSection = React.lazy(() => import('./About.js'));
 
+
+
 function Landing(props) {
+
+    const [data,setData] = useState({
+        date:'',
+        email:''
+    })
+    const [emailValue,setEmailValue] = useState('')
+
+    const success = () => {
+        message.success('Email has been Shared Successfully');
+      };
+      
+    const error = (messager) => {
+    message.error(messager);
+    };
+      
+   const handleChange = async() => {
+        var today = new Date().toLocaleString();
+        // var dd = String(today.getDate()).padStart(2, '0');
+        // var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        // var yyyy = today.getFullYear();
+        // today = mm + '/' + dd + '/' + yyyy;
+       
+        const todaySplit = today.split(',')
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        const result = re.test(String(emailValue).toLowerCase());
+
+        if(result) {
+            try {
+                const request = await fetch('https://v1.nocodeapi.com/ysh1109/google_sheets/PZMgIxjBTcKiCBoG?tabId=Sheet1',
+                {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type' : 'application/json'
+                    },
+                    body: JSON.stringify([[emailValue,todaySplit[0],todaySplit[1]]])
+    
+                
+                })
+                const response  = await request.json()
+                
+                if(response?.message === 'Successfully Inserted' ){
+                    console.log(response)
+                    success()
+                    setEmailValue('')
+                }
+           }
+           catch(err) {
+                error("Something Went Wrong")
+                console.log(err)
+           }
+        }
+        else {
+            error('Please enter a valid Email Address !!!')
+        }
+         
+     
+   }
+  
+
   useEffect(()=>{
     AOS.init({
         duration : 1500
@@ -49,7 +111,7 @@ function Landing(props) {
     return (
         <div >
             <div className="landing_banner">
-                <video id="video_bg" playsinline="playsinline" controls style={{width:'100%'}} preload={true} muted autoPlay={true} loop="loop">
+                <video id="video_bg" playsInline="playsinline" controls style={{width:'100%'}} preload={true} muted autoPlay={true} loop="loop">
                      <source src={videobg} type="video/mp4"></source>
                 </video>
             </div>
@@ -130,10 +192,10 @@ function Landing(props) {
                 </div>
                 <div className="landing_squad_form">
                     <img alt={"shoe_image"} className="shoe_image" src={shoe} fluid></img>
-                    <form onSubmit={{}}>
-                        <input className="input_box" type="text" placeholder={"enter your email id here"} />
+                    <form  name="google-sheet">
+                        <input className="input_box" type="text" placeholder={"enter your email id here"} value={emailValue} onChange={(e)=>setEmailValue(e.target.value)} />
                     </form>
-                    <img alt={"Submit"} className="submit_image_1" src={submitButton} fluid></img>
+                    <img alt={"Submit"} onClick={()=>handleChange()} className="submit_image_1" src={submitButton} fluid></img>
                 </div>
                 
             </div>
