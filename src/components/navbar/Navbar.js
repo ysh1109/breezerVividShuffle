@@ -1,7 +1,7 @@
 import React, { useState,useEffect} from 'react';
 import './Navbar.css';
-// import logo from '../../Assets/logo/BVS_Logo.png'
-import logo from '../../Assets/logo/Logo.gif';
+import logo from '../../Assets/logo/BVS_Logo.png'
+// import logo from '../../Assets/logo/bvs_logo.svg';
 
 import Register from '../../Assets/categories/register.svg';
 import { Menu, Dropdown } from 'antd';
