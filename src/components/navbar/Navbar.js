@@ -2,6 +2,7 @@ import React, { useState,useEffect} from 'react';
 import './Navbar.css';
 // import logo from '../../Assets/logo/BVS_Logo.png'
 import logo from '../../Assets/logo/Logo.gif';
+
 import Register from '../../Assets/categories/register.svg';
 import { Menu, Dropdown } from 'antd';
 
@@ -124,6 +125,8 @@ const Navbar = props => {
 				window.scrollTo(0,0);
 				setSelectedPage(null);
 			}} src={logo} style={{height:100}}/>
+
+                
             </div>
            <div className="menu-icon" onClick={handleClick}>
                

@@ -29,6 +29,7 @@ import facebook from '../../Assets/categories/facebook.svg'
 import youtube01 from '../../Assets/categories/youtube01.svg'
 import shuffleTitle from '../../Assets/illustrations/shuffle_title.svg'
 import spotify from '../../Assets/spotify.svg'
+// import logoVideo from '../../Assets/2x/Logo_Flip.mov';
 import AOS from 'aos';
 import star from '../../Assets/illustrations/star_mainPage.svg'
 import shuffle_title from '../../Assets/illustrations/shuffle_ambassador_pattern.svg'
@@ -113,7 +114,7 @@ function Landing(props) {
     return (
         <div >
             <div className="landing_banner">
-                <video id="video_bg" playsInline="playsinline" controls style={{width:'100%'}} preload={true} muted autoPlay={true} loop="loop">
+                <video id="video_bg" playsInline="playsinline" style={{width:'100%'}} preload={true} muted autoPlay={true} loop="loop">
                      <source src={videobg} type="video/mp4"></source>
                 </video>
             </div>
@@ -142,7 +143,9 @@ function Landing(props) {
                    
                 </div>
             </div>
-
+            {/* <video  playsInline="playsinline" style={{width:'100%'}} preload={true} muted autoPlay={true} loop="loop">
+                     <source src={logoVideo} type="video/mp4"></source>
+                </video> */}
 
             <div id="category" className="landing_category" style={{backgroundImage: `url(${bg_categories})`}}>
                 <div data-aos="flip-up" className="landing_category_title">
@@ -217,6 +220,7 @@ function Landing(props) {
                 <div data-aos="flip-up" className="landing_handle_title" >
                     <h2 style={{color:'#3a539c'}}>FOLLOW US ON </h2>
                     <InstagramOutlined style={{marginTop:-5,color:'#fff',fontSize:48}}/> <span className="last_handle">@brezeervividshuffle</span>
+                    <br></br>
                     <div className="center_social">
                     <InstagramFeed token="IGQVJYUFd4cW5WTEFCWGdQMFJOZAEZAYYXZAZAelFmdGJlRWpIa3dFUWtJYlNRdE0wV0RkV0UtSUV5ZA3lZAZADFnN3ZA5NGpYbTRpYnJIdjVtcmkwMk1KZATFqcVRSaTdFajctbWQxWnU3TkdiWDVabU04bmFGaAZDZD" counter="3"/>
                     </div>
