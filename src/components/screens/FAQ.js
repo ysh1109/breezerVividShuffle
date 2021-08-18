@@ -14,6 +14,8 @@ import Card11 from '../../Assets/faqImages/card11.svg';
 import Card12 from '../../Assets/faqImages/card12.svg';
 import TitleImage from '../../Assets/faqImages/faq_title.svg';
 import bottle from '../../Assets/faqImages/bottle.svg';
+import card11_illustrations_1 from '../../Assets/faqImages/card11_illustrations_1.svg';
+
 import FAQ_BG from '../../Assets/backgrounds/faq_background.png';
 import facebook from '../../Assets/categories/facebook.svg'
 import youtube01 from '../../Assets/categories/youtube01.svg'
@@ -43,7 +45,10 @@ export default props => {
 				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card8} />	
 				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card9} />	
 				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card10} />	
-				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card11} />	
+				<div style={{position:'relative'}}>
+					<img  data-aos="zoom-in-up" className="random_faq_1" src={card11_illustrations_1} />	
+					<img  data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card11} />	
+				</div>	
 				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card12} />	
 			</div>
 		</div>
