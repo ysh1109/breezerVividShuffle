@@ -40,7 +40,7 @@
 }
 .landing_about_content_text p {
     font-family: GothamMedium;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     width: 80%;
     text-align: left;
@@ -69,9 +69,16 @@
 .about_image_1{
     height: 250px;
     max-width: 100%;
+    margin-top: 50px;
 }
 .about_image_2{
     height: 250px;
+    max-width: 100%;
+    transform: scale(1.3);
+    margin-bottom: 25px;
+}
+.about_image_02{
+    height: 400px;
     max-width: 100%;
     transform: scale(1.3);
     margin-bottom: 25px;
@@ -110,7 +117,7 @@
 .landing_shuffle {
     display: flex;
     width: 100%;
-    height: 110vh;
+    padding: 60px 0px;
     background-size: cover;
     flex-direction: column;
     justify-content: space-evenly;
@@ -125,6 +132,7 @@
     flex:0.2;
     justify-content: center;
     align-items: center;
+    margin-bottom: 60px;
     
 }
 .landing_shuffle_title h2 {
@@ -147,6 +155,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .landing_squad {
@@ -381,6 +390,7 @@ textarea:focus, input:focus{
     .about_image_1{
         height: 300px;
         max-width: 100%;
+        /* margin-top: 40px; */
     }
     .landing_squad_title h2 {
         font-family: GothamBlack;
@@ -433,6 +443,9 @@ textarea:focus, input:focus{
     }
     .landing_last {
         height: fit-content;
+    }
+    .about_image_sos{
+        width: 300px;
     }
   }
 

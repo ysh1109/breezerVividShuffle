@@ -11,12 +11,12 @@ import category2 from '../../Assets/categories/MainPage_-06.png'
 import category3 from '../../Assets/categories/MainPage_-07.png'
 import category4 from '../../Assets/categories/MainPage_-09.png'
 import category5 from '../../Assets/categories/MainPage_-08.png'
-import ambassador1 from '../../Assets/ambassdor/MainPage_jpgs-14.png'
-import ambassador2 from '../../Assets/ambassdor/MainPage_jpgs-15.png'
-import ambassador3 from '../../Assets/ambassdor/MainPage_jpgs-16.png'
-import ambassador4 from '../../Assets/ambassdor/MainPage_jpgs-17.png'
-import ambassador5 from '../../Assets/rajakumari.png'
-import ambassador6 from '../../Assets/ambassdor/MainPage_jpgs-19.png'
+import ambassador1 from '../../Assets/ambassdor/ambassador3.png'
+import ambassador2 from '../../Assets/ambassdor/ambassador4.png'
+import ambassador3 from '../../Assets/ambassdor/ambassador6.png'
+import ambassador4 from '../../Assets/ambassdor/ambassador5-02.png'
+import ambassador5 from '../../Assets/ambassdor/ambassador1.png'
+import ambassador6 from '../../Assets/ambassdor/ambassador2-02.png'
 import schoolOfShuffleBg from '../../Assets/backgrounds/schoolOfShuffle-08.png'
 import schoolOfShuffleImg from '../../Assets/sos_title.svg'
 import joinSquadbg from '../../Assets/backgrounds/join_squad.png'
@@ -107,12 +107,12 @@ function Landing(props) {
                 <div className="landing_shuffle_content">
                     <div className="landing_category_content_one">
                         <img alt={"about_image_1"} data-aos="fade-up" className="about_image_1" src={ambassador5} fluid></img>
-                        <img alt={"about_image_1"} data-aos="fade-up" className="about_image_2" src={ambassador6} fluid></img>
+                        <img alt={"about_image_1"} data-aos="fade-up" className="about_image_02" src={ambassador6} fluid></img>
                         <img alt={"about_image_1"} data-aos="fade-up" className="about_image_1" src={ambassador1} fluid></img>
                     </div>
                     <div className="landing_category_content_two">
                     <img alt={"about_image_1"} data-aos="fade-up" className="about_image_1" src={ambassador2} fluid></img>
-                        <img alt={"about_image_2"} data-aos="fade-up"  className="about_image_2" src={ambassador4} fluid></img>
+                        <img alt={"about_image_2"} data-aos="fade-up"  className="about_image_02" src={ambassador4} fluid></img>
                         <img alt={"about_image_1"} data-aos="fade-up" className="about_image_1" src={ambassador3} fluid></img>
                     </div>
                 
