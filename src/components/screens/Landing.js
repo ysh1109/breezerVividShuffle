@@ -223,7 +223,7 @@ function Landing(props) {
                     <img alt={"Facebook"} className="social_media" src={facebook} fluid>
                     </img>
                 </a>
-                <a href="https://www.instagram.com/breezervividshuffle/?hl=en" target="_blank">
+                <a href="https://open.spotify.com/user/25f6g1zp7uknzkpcsdobgyiyl?si=614fb9d2e1124683" target="_blank">
             	    <img alt={"Youtube"} className="social_media" src={spotify} fluid></img>
                 </a>  
                 <a href="https://www.youtube.com/channel/UCkvaGaPik8kNUlUTY_QLtuA" target="_blank">    

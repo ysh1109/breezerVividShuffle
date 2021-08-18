@@ -12,6 +12,10 @@ body{
 	width: 700px;
 	height: 400px;
 }
+.landing_last_social_vos{
+	position: absolute;
+	bottom:10px
+}
 .VidContainer p{
     font-family: GothamBold;
 	color:white;
@@ -87,6 +91,10 @@ body{
 	width: 300px;
 	padding: 10px;
 }
+.social_media {
+    width: 40px;
+    margin-right:15px ;
+}
 }
 @media screen and (max-width : 368px) {
 	.VidContainer iframe{
@@ -101,4 +109,10 @@ body{
 		width: 250px;
 		padding: 10px;
 	}
+}
+
+.footer_image{
+	object-fit: contain;
+    width: 100%;
+    height: auto;
 }
