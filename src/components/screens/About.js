@@ -18,7 +18,7 @@ export default props => {
                 </div>
                 <div className="landing_about_content">
                     <div className="landing_about_content_text" >
-                        <p data-aos="fade-right">
+                        <p data-aos="fade-in">
                      		BREEZER Vivid Shuffle steps into its 5th year as India’s biggest
     						hip-hop league. Through the seasons, we’ve provided a stage
     						for the community to showcase talent, build skill and share the
@@ -31,7 +31,7 @@ export default props => {
                         </p>
                     </div>
                     <div className="landing_about_content_image" >
-                     <img alt={"about_image"} className="about_image" data-aos="fade-left" src={aboutIllustrations} fluid></img>
+                     <img alt={"about_image"} className="about_image" data-aos="fade-in" src={aboutIllustrations} fluid></img>
                         
                     </div>
                 </div>

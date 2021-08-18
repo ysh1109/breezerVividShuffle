@@ -8,6 +8,8 @@ import '../src/Assets/fonts/GOTHAM-BLACK.OTF';
 import '../src/Assets/fonts/GOTHAM-BOLD.OTF';
 import '../src/Assets/fonts/GOTHAM-MEDIUM.OTF';
 import 'antd/dist/antd.css';
+import InstagramFeed  from 'react-ig-feed'
+import 'react-ig-feed/dist/index.css'
 ReactDOM.render(
   <React.StrictMode>
     <App />

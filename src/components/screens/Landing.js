@@ -35,6 +35,8 @@ import shuffle_title from '../../Assets/illustrations/shuffle_ambassador_pattern
 import videobg from '../../Assets/ambassdor/videobg.mp4'
 import {InstagramOutlined} from '@ant-design/icons'
 import "aos/dist/aos.css"
+import InstagramFeed  from 'react-ig-feed'
+import 'react-ig-feed/dist/index.css'
 
 const AboutSection = React.lazy(() => import('./About.js'));
 
@@ -153,6 +155,9 @@ function Landing(props) {
                 <div data-aos="flip-up" className="landing_handle_title" >
                     <h2 style={{color:'#3a539c'}}>FOLLOW US ON </h2>
                     <InstagramOutlined style={{marginTop:-5,color:'#fff',fontSize:48}}/> <span className="last_handle">@brezeervividshuffle</span>
+                    <div className="center_social">
+                    <InstagramFeed token="IGQVJYUFd4cW5WTEFCWGdQMFJOZAEZAYYXZAZAelFmdGJlRWpIa3dFUWtJYlNRdE0wV0RkV0UtSUV5ZA3lZAZADFnN3ZA5NGpYbTRpYnJIdjVtcmkwMk1KZATFqcVRSaTdFajctbWQxWnU3TkdiWDVabU04bmFGaAZDZD" counter="3"/>
+                    </div>
                 </div>
                 
             </div>

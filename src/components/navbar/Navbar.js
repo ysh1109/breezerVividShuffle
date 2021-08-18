@@ -1,7 +1,7 @@
 import React, { useState,useEffect} from 'react';
 import './Navbar.css';
 // import logo from '../../Assets/logo/BVS_Logo.png'
-import logo from '../../Assets/logo/bvs_logo.svg';
+import logo from '../../Assets/logo/Logo.gif';
 import Register from '../../Assets/categories/register.svg';
 import { Menu, Dropdown } from 'antd';
 
@@ -41,7 +41,7 @@ const Navbar = props => {
       const menu = (
         <Menu>
           <Menu.Item key="0">
-            <a href="#">Participation</a>
+            <a href="#">Participation </a>
           </Menu.Item>
           <Menu.Item key="1">
             <a href="#">School of Shuffle</a>
