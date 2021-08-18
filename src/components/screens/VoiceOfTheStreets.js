@@ -4,6 +4,7 @@ import Card1 from '../../Assets/faqImages/card1.svg';
 import TitleImage from '../../Assets/VoiceOfTheStreetImages/title_vos_1.svg';
 import VOTS_BG from '../../Assets/VoiceOfTheStreetImages/Voice_of_Streets_background.png';
 import VideoList from '../../Assets/vidList.js';
+import flames from '../../Assets/flames-01.png'
 
 const VidContainer = props => {
 	return (
@@ -39,6 +40,9 @@ export default props => {
 			</div>
 			<div className={"vid_flex"} >
 				<Vids />
+			</div>
+			<div>
+				<img className="footer_image" src={flames}></img>
 			</div>
 		</div>
 	)

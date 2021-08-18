@@ -49,7 +49,7 @@ function Landing(props) {
     return (
         <div >
             <div className="landing_banner">
-                <video id="video_bg" playsinline="playsinline" controls style={{width:'100%'}} preload={true} muted autoPlay={true} loop="loop">
+                <video id="video_bg" playsinline="playsinline"  style={{width:'100%'}} preload={true} muted autoPlay={true} loop="loop">
                      <source src={videobg} type="video/mp4"></source>
                 </video>
             </div>
@@ -161,7 +161,7 @@ function Landing(props) {
                     <img alt={"Facebook"} className="social_media" src={facebook} fluid>
                     </img>
                 </a>
-                <a href="https://www.instagram.com/breezervividshuffle/?hl=en" target="_blank">
+                <a href="https://open.spotify.com/user/25f6g1zp7uknzkpcsdobgyiyl?si=614fb9d2e1124683" target="_blank">
             	    <img alt={"Youtube"} className="social_media" src={spotify} fluid></img>
                 </a>  
                 <a href="https://www.youtube.com/channel/UCkvaGaPik8kNUlUTY_QLtuA" target="_blank">    
