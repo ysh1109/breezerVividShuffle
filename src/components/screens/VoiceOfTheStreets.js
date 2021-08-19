@@ -8,6 +8,9 @@ import flames from '../../Assets/flames-01.png'
 import facebook from '../../Assets/categories/facebook.svg'
 import youtube01 from '../../Assets/categories/youtube01.svg'
 import spotify from '../../Assets/spotify.svg'
+import AOS from 'aos';
+import "aos/dist/aos.css"
+
 const VidContainer = props => {
 	return (
 		<div data-aos="zoom-in-up" className={"VidContainer"} style={{backgroundColor:props.backgroundColor}}>
@@ -27,6 +30,9 @@ export default props => {
 	React.useEffect(() => {
 		document.body.style.backgroundImage = `url('${VOTS_BG}')`;
 	 	document.body.style.backgroundRepeatY = 'repeat' 
+		 AOS.init({
+			duration : 1500
+		 })
 	},[]);
 	return (
 		<div className={"vots_container"}>

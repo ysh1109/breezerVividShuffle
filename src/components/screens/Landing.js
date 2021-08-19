@@ -154,21 +154,21 @@ function Landing(props) {
                 </div>
                 <div className="landing_category_content">
                     <div className="landing_category_content_one">
-                        <a href="/Graffiti.html">
+                        <a target="_blank" href="https://breezervividshuffle.in/Graffiti.html" className="about_image_div">
                             <img alt={"about_image"} data-aos="zoom-in-up" className="about_image" src={category1} fluid></img>
                         </a>
-                        <a href="/Breaking.html">
+                        <a target="_blank" href="https://breezervividshuffle.in/Breaking.html" className="about_image_div">
                              <img alt={"about_image"} data-aos="zoom-in-up" className="about_image" src={category2} fluid></img>
                         </a>
-                        <a href="/Rap.html">
+                        <a target="_blank" href="https://breezervividshuffle.in/Rap.html" className="about_image_div">
                             <img alt={"about_image"} data-aos="zoom-in-up" className="about_image" src={category3} fluid></img>
                         </a>
                     </div>
                     <div className="landing_category_content_two">
-                        <a href="/Showcase.html">
+                        <a target="_blank" href="https://breezervividshuffle.in/Showcase.html" className="about_image_div">
                          <img alt={"about_image"} data-aos="zoom-in-up" className="about_image" src={category4} fluid></img>
                         </a>
-                        <a href="/Poppers.html">
+                        <a target="_blank" href="https://breezervividshuffle.in/Poppers.html" className="about_image_div">
                          <img alt={"about_image"} data-aos="zoom-in-up" className="about_image" src={category5} fluid></img>
                         </a>
                     </div>

@@ -20,12 +20,19 @@ import FAQ_BG from '../../Assets/backgrounds/faq_background.png';
 import facebook from '../../Assets/categories/facebook.svg'
 import youtube01 from '../../Assets/categories/youtube01.svg'
 import spotify from '../../Assets/spotify.svg'
-
+import AOS from 'aos';
+import "aos/dist/aos.css"
 export default props => {
 	const [screenWidth,setScreenWidth] = useState(window.innerWidth)
 	React.useEffect(() => {
 		window.addEventListener('resize',screenResize)
 		document.body.style.backgroundImage = `url('${FAQ_BG}')`;
+		
+	
+			AOS.init({
+				duration : 1500
+			  });
+
 	},[]);
 
 	const screenResize =()=>{
