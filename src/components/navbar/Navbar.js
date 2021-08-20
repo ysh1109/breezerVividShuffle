@@ -4,7 +4,9 @@ import logo from '../../Assets/logo/BVS_Logo.png'
 // import logo from '../../Assets/logo/bvs_logo.svg';
 
 import Register from '../../Assets/categories/register.svg';
-import { Menu, Dropdown } from 'antd';
+import { Menu, Dropdown,Popover, Button,Tooltip } from 'antd';
+
+
 
 import {
   BrowserRouter as Router,
@@ -16,6 +18,7 @@ import {
   useParams
 } from "react-router-dom";
 
+
 const Navbar = props => {
     const [clicked,setClicked] = useState(false)
     const [headerbg,setHeaderbg] = useState(false)
@@ -25,6 +28,11 @@ const Navbar = props => {
     const handleClick = () => {
         setClicked(!clicked)
     }
+	const content = (
+		<div>
+		  <p>Coming Soon...</p>
+		</div>
+	  );
     const handleScroll = (e) => {
         // console.log("scroll value",window.scrollY)
         if(window.scrollY > 200) {
@@ -76,10 +84,12 @@ const Navbar = props => {
       const menu = (
         <Menu>
           <Menu.Item key="0">
-            <a href="#">Participation </a>
+            <a href="https://insider.in/breezer-vivid-shuffle-online/article" target="_blank">Participation </a>
           </Menu.Item>
           <Menu.Item key="1">
-            <a href="#">School of Shuffle</a>
+		  	<Tooltip placement="right" title={<span>Coming Soon</span>}> 
+            <a>School of Shuffle</a>
+			</Tooltip>
           </Menu.Item>
           <Menu.Divider />
         </Menu>
