@@ -15,23 +15,38 @@ import cap from '../../Assets/faqImages/cap.svg'
 import caste from '../../Assets/faqImages/caste.svg'
 import shoe from '../../Assets/faqImages/shoe.svg'
 import tape from '../../Assets/faqImages/tape.svg'
-
+import { Skeleton } from 'antd';
 import AOS from 'aos';
 import "aos/dist/aos.css"
 
+const elementArr = {
+	'tape':tape,
+	'caste':caste,
+	'bottle':bottle,
+	'bottle_green':bottle_green,
+		'ball':ball,
+		'shoe':shoe,
+		'cap':cap
+}
 const VidContainer = props => {
 	return (
 		<div data-aos="zoom-in-up" className={"VidContainer"} style={{backgroundColor:props.backgroundColor}}>
-			<iframe className="YoutubePlayer" frameBorder="0" src={props.videoID}></iframe>
+			<div className="YoutubePlayer">
+				<iframe frameBorder="0" src={props.videoID}></iframe>
+			</div>
 			<p>{props.vidText}</p>
+			{props.element?<div className="vos_elements" style={props.position} >
+				<img  alt={"FAQ"} src={elementArr[props.elementName]} />
+			</div>:''}
 		</div>
 	);
 }
 
 const Vids = props => {
 	return VideoList.map(item => {
-		return <VidContainer key={item.videoID} backgroundColor={item.backgroundColor} videoID={item.videoID} vidText={item.videoText}/>
+		return <VidContainer key={item.videoID} backgroundColor={item.backgroundColor} videoID={item.videoID} vidText={item.videoText} element={item.element} elementName={item.elementName} position={item.position}/>
 	})
+	
 }
 
 export default props => {
@@ -57,9 +72,7 @@ export default props => {
 			<div className={"vid_flex"} >
 				<Vids />
 			</div>
-			<div className="vos_elements">
-				<img  alt={"FAQ"} src={ball} />
-			</div>
+			
 			<div >
 				
 				

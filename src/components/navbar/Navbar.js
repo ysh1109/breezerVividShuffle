@@ -27,7 +27,7 @@ const Navbar = props => {
     }
     const handleScroll = (e) => {
         // console.log("scroll value",window.scrollY)
-        if(window.scrollY > 400) {
+        if(window.scrollY > 200) {
             setHeaderbg(true)
         }
         else {
