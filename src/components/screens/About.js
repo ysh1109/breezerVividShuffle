@@ -31,8 +31,7 @@ export default props => {
                         </p>
                     </div>
                     <div className="landing_about_content_image" >
-                     <img alt={"about_image"} className="about_image" data-aos="fade-in" src={aboutIllustrations} fluid></img>
-                        
+                     	<img alt={"about_image"} className="about_image" data-aos="fade-in" src={aboutIllustrations} fluid></img>
                     </div>
                 </div>
 		</div>

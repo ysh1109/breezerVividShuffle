@@ -42,10 +42,9 @@ import InstagramFeed  from 'react-ig-feed'
 import 'react-ig-feed/dist/index.css'
 import { message, Button, Space } from 'antd';
 
+
+
 const AboutSection = React.lazy(() => import('./About.js'));
-
-
-
 function Landing(props) {
 
     const [data,setData] = useState({
@@ -82,11 +81,9 @@ function Landing(props) {
                         'Content-Type' : 'application/json'
                     },
                     body: JSON.stringify([[emailValue,todaySplit[0],todaySplit[1]]])
-    
                 
                 })
                 const response  = await request.json()
-                
                 if(response?.message === 'Successfully Inserted' ){
                     // console.log(response)
                     success()
@@ -100,11 +97,8 @@ function Landing(props) {
         }
         else {
             error('Please enter a valid Email Address !!!')
-        }
-         
-     
+        }  
    }
-  
 
   useEffect(()=>{
     AOS.init({
@@ -124,16 +118,7 @@ function Landing(props) {
                  <img src={isMuted?muted:volume} style={{height:'100%',width:'100%',objectFit:'contain'}}/>
                 </div>
             </div>
-            {/* <div style={{backgroundImage:`url(${bg_ticker})`}} className={"floatingTextContainer"}>
-                <div className="marquee_container" width="100%" direction="left">
-                    <div className="marquee_text" >
-                        <img alt={"about_image"} src={star} style={{width:30,height:30,paddingRight:5}} fluid></img>
-                          #LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon
-                        <img alt={"about_image"} src={star} style={{width:30,height:30,paddingLeft:5}} fluid></img>
-                     </div>
-                   
-                </div>
-            </div> */}
+
             <div style={{backgroundImage:`url(${bg_ticker})`,marginTop:-5}}>
                 <div className="client-slider">
                     <div className="client-slide-track">
@@ -178,52 +163,43 @@ function Landing(props) {
 			<Suspense fallback={()=><></>}>
 				<AboutSection {...props}/>
 			</Suspense>
-            {/* <div style={{backgroundImage:`url(${bg_ticker})`}} className={"floatingTextContainer"}>
-                <div className="marquee_container" width="100%" direction="left">
-                    <div className="marquee_text" >
-                     <img alt={"about_image"} src={star} style={{width:30,height:30,paddingRight:5}} fluid></img>
-                     #LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon
-                    <img alt={"about_image"} src={star} style={{width:30,height:30,paddingLeft:5}} fluid></img>                   
-                     </div> 
-                </div>
-            </div> */}
             <div style={{backgroundImage:`url(${bg_ticker})`}}>
                 <div className="client-slider">
                     <div className="client-slide-track">
                         <div className="client-slide">
-                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
-                        <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
-                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                                <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
-                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
-                        <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
-                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                                <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
-                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
-                        <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
-                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                                <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
-                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
-                        <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
-                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                                <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
-                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
-                        <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
-                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                                <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
-                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
-                        <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
-                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                                <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
-                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
-                        <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
-                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                                <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
                         </div>
                     </div>
                 </div>
@@ -235,7 +211,6 @@ function Landing(props) {
             <div id="category" className="landing_category" style={{backgroundImage: `url(${bg_categories})`}}>
                 <div data-aos="flip-up" className="landing_category_title">
                     <h2>CATEGORIES</h2>
-                    {/* <img src={shuffleTitle}></img> */}
                 </div>
                 <div className="landing_category_content">
                     <div className="landing_category_content_one">
@@ -251,41 +226,35 @@ function Landing(props) {
                     </div>
                     <div className="landing_category_content_two">
                         <a target="_blank" href="https://breezervividshuffle.in/Showcase.html" className="about_image_div">
-                         <img alt={"about_image"} data-aos="zoom-in-up" className="about_image" src={category4} fluid></img>
+                            <img alt={"about_image"} data-aos="zoom-in-up" className="about_image" src={category4} fluid></img>
                         </a>
                         <a target="_blank" href="https://breezervividshuffle.in/Poppers.html" className="about_image_div">
-                         <img alt={"about_image"} data-aos="zoom-in-up" className="about_image" src={category5} fluid></img>
+                            <img alt={"about_image"} data-aos="zoom-in-up" className="about_image" src={category5} fluid></img>
                         </a>
                     </div>
-                
-                
                 </div>
             </div>
 
             <div className="landing_shuffle" style={{backgroundImage: `url(${shuffleAmbassdorBg})`}}>
                 <div data-aos="flip-up" className="landing_shuffle_title">
-                <img src={shuffleTitle} className="shuffle_Title_main"></img> 
-                     </div>
+                    <img src={shuffleTitle} className="shuffle_Title_main"></img> 
+                </div>
                 <div className="landing_shuffle_content">
                     <div className="landing_category_content_one">
                         <img alt={"about_image_1"} data-aos="fade-up" className="about_image_1" src={ambassador5} fluid></img>
                         <img alt={"about_image_1"} data-aos="fade-up" className="about_image_02" src={ambassador6} fluid></img>
                         <img alt={"about_image_1"} data-aos="fade-up" className="about_image_1" src={ambassador1} fluid></img>
                     </div>
-                    <div className="landing_category_content_two">
+                <div className="landing_category_content_two">
                     <img alt={"about_image_1"} data-aos="fade-up" className="about_image_1" src={ambassador2} fluid></img>
-                        <img alt={"about_image_2"} data-aos="fade-up"  className="about_image_02" src={ambassador4} fluid></img>
-                        <img alt={"about_image_1"} data-aos="fade-up" className="about_image_1" src={ambassador3} fluid></img>
-                    </div>
-                
-                
+                    <img alt={"about_image_2"} data-aos="fade-up"  className="about_image_02" src={ambassador4} fluid></img>
+                    <img alt={"about_image_1"} data-aos="fade-up" className="about_image_1" src={ambassador3} fluid></img>
+                </div>
                 </div>
             </div>
-
             <div id="shuffle" className="landing_category" style={{backgroundImage: `url(${schoolOfShuffleBg})`}}>
                 <img alt={"about_image_sos"} className="about_image_sos" src={schoolOfShuffleImg} fluid></img>
             </div>
-
             <div className="landing_squad" style={{backgroundImage: `url(${joinSquadbg})`}}>
                 <div data-aos="flip-up" className="landing_squad_title">
                     <h2>JOIN THE SQUAD FOR EXCLUSIVE UPDATES</h2>
@@ -297,7 +266,6 @@ function Landing(props) {
                     </form>
                     <img alt={"Submit"} onClick={()=>handleChange()} className="submit_image_1" src={submitButton} fluid></img>
                 </div>
-                
             </div>
 
             <div className="landing_squad" style={{backgroundImage: `url(${infobg})`}}>
@@ -308,7 +276,6 @@ function Landing(props) {
                     <h4>Email us <span>shuffle@oml.in</span></h4>
                     <h4>Or hit up on <span>+91 7774058785</span></h4>
                 </div>
-                
             </div>
 
             <div className="landing_last" style={{backgroundImage: `url(${lastbg})`,display:'flex'}}>
@@ -320,7 +287,6 @@ function Landing(props) {
                     <InstagramFeed token="IGQVJYUFd4cW5WTEFCWGdQMFJOZAEZAYYXZAZAelFmdGJlRWpIa3dFUWtJYlNRdE0wV0RkV0UtSUV5ZA3lZAZADFnN3ZA5NGpYbTRpYnJIdjVtcmkwMk1KZATFqcVRSaTdFajctbWQxWnU3TkdiWDVabU04bmFGaAZDZD" counter="3"/>
                     </div>
                 </div>
-                
             </div>
             <div className="landing_last_social">
                 <a href="https://www.facebook.com/breezervividshuffle/" target="_blank">
@@ -334,7 +300,6 @@ function Landing(props) {
             	    <img alt={"Youtube"} className="social_media" src={youtube01} fluid></img>
                 </a> 
             </div>
-
         </div>
     )
 }

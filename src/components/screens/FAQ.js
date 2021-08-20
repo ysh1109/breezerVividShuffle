@@ -15,7 +15,6 @@ import Card12 from '../../Assets/faqImages/card12.svg';
 import TitleImage from '../../Assets/faqImages/faq_title.svg';
 import bottle from '../../Assets/faqImages/bottle.svg';
 import card11_illustrations_1 from '../../Assets/faqImages/card11_illustrations_1.svg';
-
 import FAQ_BG from '../../Assets/backgrounds/faq_background-01.png';
 import facebook from '../../Assets/categories/facebook.svg'
 import youtube01 from '../../Assets/categories/youtube01.svg'
@@ -27,12 +26,9 @@ export default props => {
 	React.useEffect(() => {
 		window.addEventListener('resize',screenResize)
 		document.body.style.backgroundImage = `url('${FAQ_BG}')`;
-		
-	
 			AOS.init({
 				duration : 1500
 			  });
-
 	},[]);
 
 	const screenResize =()=>{
@@ -72,7 +68,6 @@ export default props => {
 					</div> :
 					<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card12} />
 					 }	
-					
 			</div>
 		</div>
 		<div className="faq_last_div"></div>

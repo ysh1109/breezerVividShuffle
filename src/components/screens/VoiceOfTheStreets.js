@@ -8,6 +8,14 @@ import flames from '../../Assets/flames-01.png'
 import facebook from '../../Assets/categories/facebook.svg'
 import youtube01 from '../../Assets/categories/youtube01.svg'
 import spotify from '../../Assets/spotify.svg'
+import ball from '../../Assets/faqImages/ball.svg'
+import bottle from '../../Assets/faqImages/bottle.svg'
+import bottle_green from '../../Assets/faqImages/bottle_green.svg'
+import cap from '../../Assets/faqImages/cap.svg'
+import caste from '../../Assets/faqImages/caste.svg'
+import shoe from '../../Assets/faqImages/shoe.svg'
+import tape from '../../Assets/faqImages/tape.svg'
+
 import AOS from 'aos';
 import "aos/dist/aos.css"
 
@@ -48,6 +56,9 @@ export default props => {
 			</div>
 			<div className={"vid_flex"} >
 				<Vids />
+			</div>
+			<div className="vos_elements">
+				<img  alt={"FAQ"} src={ball} />
 			</div>
 			<div >
 				

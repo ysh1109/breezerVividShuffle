@@ -6,6 +6,7 @@ body{
 	padding: 15px 20px;
 	border-radius: 15px;
 	margin-bottom: 90px;
+	position: relative;
 
 }
 .VidContainer iframe{
@@ -51,6 +52,12 @@ body{
 	text-align: center;
 	color: #fff;
 	font-size: 18px;
+}
+.vos_elements{
+	position: absolute;
+}
+.vos_elements img {
+	height: 100px;
 }
 @media screen and (max-width : 768px) {
 	body{
