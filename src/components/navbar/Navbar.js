@@ -2,7 +2,8 @@ import React, { useState,useEffect} from 'react';
 import './Navbar.css';
 import logo from '../../Assets/logo/BVS_Logo.png'
 // import logo from '../../Assets/logo/bvs_logo.svg';
-
+import logoWebm from '../../Assets/logo/bvslogoflip.webm'
+import logoMov from '../../Assets/logo/Logo_Flip.mov'
 import Register from '../../Assets/categories/register.svg';
 import { Menu, Dropdown,Popover, Button,Tooltip } from 'antd';
 
@@ -132,14 +133,21 @@ const Navbar = props => {
       <div className="blur_effect">
         {/* style={{position:props.activeScreen === 0 ? 'fixed':'relative'}} */}
        <nav className={headerbg?"NavbarItems activeHeader":"NavbarItems"}  >
-            <div className="menu-logo">
-			<img alt={"logo"} onClick={()=>{
+            <div onClick={()=>{
 				history.push('/')
 				window.scrollTo(0,0);
 				setSelectedPage(null);
-			}} src={logo} className="logo_style" style={{height:100}}/>
+			}} className="menu-logo">
+			{/* <img alt={"logo"} onClick={()=>{
+				history.push('/')
+				window.scrollTo(0,0);
+				setSelectedPage(null);
+			}} src={logo} className="logo_style" style={{height:100}}/> */}
 
-                
+			<video className="logo_style"  style={{height:150}} autoPlay loop muted playsInline>
+            <source src={logoMov} type='video/mp4; codecs="hvc1"'></source>
+            <source src={logoWebm} type="video/webm"></source>
+            </video>
             </div>
             <div className="menu-icon" onClick={handleClick}>
                

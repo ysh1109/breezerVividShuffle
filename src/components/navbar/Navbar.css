@@ -28,7 +28,7 @@
      justify-content: center;
      align-items: center;
      flex: 0.3;
-     animation: shuffle 1s ease  infinite;
+     /* animation: shuffle 1s ease  infinite; */
  }
  .menu-logo img {
      height: 200px !important;
@@ -134,7 +134,7 @@ dl, ol, ul {
 	     justify-content: center;
 	     align-items: center;
 	     flex: 0.2;
-	     animation: shuffle 1s ease  infinite;
+	     /* animation: shuffle 1s ease  infinite; */
 	 }
    
     .nav-menu {
