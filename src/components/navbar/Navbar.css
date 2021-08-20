@@ -125,7 +125,8 @@ dl, ol, ul {
 @media screen and (max-width : 1037px) {
 
     .NavbarItems {
-        position: fixed;
+        position: relative;
+        background-color: #000000;
     }
 	.menu-logo {
 	     height: 100%;

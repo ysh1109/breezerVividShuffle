@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 import './FAQ.css';
 import Card1 from '../../Assets/faqImages/card1-02.svg';
 import Card2 from '../../Assets/faqImages/card2-02.svg';
@@ -20,11 +20,25 @@ import FAQ_BG from '../../Assets/backgrounds/faq_background-01.png';
 import facebook from '../../Assets/categories/facebook.svg'
 import youtube01 from '../../Assets/categories/youtube01.svg'
 import spotify from '../../Assets/spotify.svg'
-
+import AOS from 'aos';
+import "aos/dist/aos.css"
 export default props => {
+	const [screenWidth,setScreenWidth] = useState(window.innerWidth)
 	React.useEffect(() => {
+		window.addEventListener('resize',screenResize)
 		document.body.style.backgroundImage = `url('${FAQ_BG}')`;
+		
+	
+			AOS.init({
+				duration : 1500
+			  });
+
 	},[]);
+
+	const screenResize =()=>{
+		setScreenWidth(window.innerWidth)
+	  }
+
 	return (
 		<div>
 		<div className={"faq_container"}>
@@ -45,11 +59,20 @@ export default props => {
 				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card8} />	
 				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card9} />	
 				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card10} />	
-				<div style={{position:'relative'}}>
+				{screenWidth<768?
+					<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card12} />: 
+					<div style={{position:'relative'}}>
 					<img  data-aos="zoom-in-up" className="random_faq_1" src={card11_illustrations_1} />	
 					<img  data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card11} />	
-				</div>	
-				<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card12} />	
+				</div> }
+				{screenWidth<768?
+					<div style={{position:'relative'}}>
+						<img  data-aos="zoom-in-up" className="random_faq_1" src={card11_illustrations_1} />	
+						<img  data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card11} />	
+					</div> :
+					<img data-aos="zoom-in-up" className="faq_image" alt={"faq1"} src={Card12} />
+					 }	
+					
 			</div>
 		</div>
 		<div className="faq_last_div"></div>
