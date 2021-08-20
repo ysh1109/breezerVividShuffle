@@ -15,7 +15,7 @@ import ambassador1 from '../../Assets/ambassdor/ambassador3.png'
 import ambassador2 from '../../Assets/ambassdor/ambassador4.png'
 import ambassador3 from '../../Assets/ambassdor/ambassador6.png'
 import ambassador4 from '../../Assets/ambassdor/ambassador5-02.png'
-import ambassador5 from '../../Assets/ambassdor/ambassador1.png'
+import ambassador5 from '../../Assets/ambassdor/ambassador1-01.png'
 import ambassador6 from '../../Assets/ambassdor/ambassador2-02.png'
 import schoolOfShuffleBg from '../../Assets/backgrounds/schoolOfShuffle-08.png'
 import schoolOfShuffleImg from '../../Assets/sos_title.svg'
@@ -118,7 +118,7 @@ function Landing(props) {
                      <source src={videobg} type="video/mp4"></source>
                 </video>
             </div>
-            <div style={{backgroundImage:`url(${bg_ticker})`}} className={"floatingTextContainer"}>
+            {/* <div style={{backgroundImage:`url(${bg_ticker})`}} className={"floatingTextContainer"}>
                 <div className="marquee_container" width="100%" direction="left">
                     <div className="marquee_text" >
                         <img alt={"about_image"} src={star} style={{width:30,height:30,paddingRight:5}} fluid></img>
@@ -127,20 +127,99 @@ function Landing(props) {
                      </div>
                    
                 </div>
+            </div> */}
+            <div style={{backgroundImage:`url(${bg_ticker})`}}>
+                <div className="client-slider">
+                    <div className="client-slide-track">
+                        <div className="client-slide">
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                        <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                        </div>
+                        <div className="client-slide">
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                        <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                        </div>
+                        <div className="client-slide">
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                        <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                        </div>
+                        <div className="client-slide">
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                        <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                        </div>
+                        <div className="client-slide">
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                        <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                        </div>
+                        <div className="client-slide">
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                        <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                        </div>
+                        <div className="client-slide">
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                        <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                        </div>
+                    </div>
+                </div>
             </div>
 			<Suspense fallback={()=><></>}>
 				<AboutSection {...props}/>
 			</Suspense>
-            <div style={{backgroundImage:`url(${bg_ticker})`}} className={"floatingTextContainer"}>
+            {/* <div style={{backgroundImage:`url(${bg_ticker})`}} className={"floatingTextContainer"}>
                 <div className="marquee_container" width="100%" direction="left">
                     <div className="marquee_text" >
                      <img alt={"about_image"} src={star} style={{width:30,height:30,paddingRight:5}} fluid></img>
                      #LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon
                     <img alt={"about_image"} src={star} style={{width:30,height:30,paddingLeft:5}} fluid></img>                   
-                     </div>
-                    
-                     
-                   
+                     </div> 
+                </div>
+            </div> */}
+            <div style={{backgroundImage:`url(${bg_ticker})`}}>
+                <div className="client-slider">
+                    <div className="client-slide-track">
+                        <div className="client-slide">
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                        <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                        </div>
+                        <div className="client-slide">
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                        <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                        </div>
+                        <div className="client-slide">
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                        <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                        </div>
+                        <div className="client-slide">
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                        <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                        </div>
+                        <div className="client-slide">
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                        <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                        </div>
+                        <div className="client-slide">
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                        <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                        </div>
+                        <div className="client-slide">
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                        <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of Shuffle coming soon</p>
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                        </div>
+                    </div>
                 </div>
             </div>
             {/* <video  playsInline="playsinline" style={{width:'100%'}} preload={true} muted autoPlay={true} loop="loop">

@@ -311,18 +311,14 @@ padding-right: 5px;
 .marquee_text {
     font-family: GothamBold;
     color: #572A76;
-	height: 50px;
-	width: 125%;
-	font-size: 26px;
-	display: flex;
-	align-items: center;
-	--moz-animation: slideshow 20s linear infinite;
-	--webkit-animation: slideshow 20s linear infinite;
+    height: 50px;
+    font-size: 24px;
+    padding-top: 6px;
+    margin: 0px;
+    /* display: flex; */
+    align-items: center;
 }
-@keyframes slideshow{
-	0% {  -webkit-transform: translateX(100%) }
-	100% {  -webkit-transform: translateX(-100%) }
-}
+
 textarea:focus, input:focus{
     outline: none;
     }
@@ -425,7 +421,7 @@ textarea:focus, input:focus{
         top: -5vh;
     }
 	.marquee_text{
-		font-size:12px;
+		font-size:24px;
 	}
     .landing_shuffle_title h2 {
         text-align: center;
@@ -461,3 +457,54 @@ textarea:focus, input:focus{
       justify-content: center;
       display: flex;
   }
+
+  /* new ticker */
+
+  .client-slider{
+    /* background: #fff; */
+    height: 60px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.client-slider:before {
+    left: 0;
+    top: 0;
+}
+:not(svg) {
+    transform-origin: 0 0;
+}
+.client-slider:after, .client-slider:before {
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+.client-slider .client-slide-track {
+    -webkit-animation: scroll 45s linear infinite;
+    animation: scroll 45s linear infinite;
+    display: flex;
+    width: 8000px;
+}
+.client-slider .client-slide {
+    padding: 5px 25px 0 30px;
+
+}
+.client-slide{
+    display: flex;
+}
+.client-slider:after {
+    right: 0;
+    top: 0;
+    transform: rotate(180deg);
+}
+@keyframes scroll{
+    0% {
+        transform: translateX(0);
+    }
+    
+    100% {
+        transform: translateX(-5000px);
+    }
+}

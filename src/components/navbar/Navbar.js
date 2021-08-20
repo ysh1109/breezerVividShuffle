@@ -119,12 +119,14 @@ const Navbar = props => {
 		}
     },[])
     return (
-       <nav className={headerbg?"NavbarItems activeHeader":"NavbarItems"} style={{position:props.activeScreen === 0 ? 'fixed':'relative'}} >
+      <div className="blur_effect">
+        {/* style={{position:props.activeScreen === 0 ? 'fixed':'relative'}} */}
+       <nav className={headerbg?"NavbarItems activeHeader":"NavbarItems"}  >
             <div className="menu-logo">
 			<img alt={"logo"} onClick={()=>{
 				window.scrollTo(0,0);
 				setSelectedPage(null);
-			}} src={logo} style={{height:100}}/>
+			}} src={logo} className="logo_style" style={{height:100}}/>
 
                 
             </div>
@@ -148,6 +150,7 @@ const Navbar = props => {
            </div>
          
        </nav>
+       </div>
     )
 }
 

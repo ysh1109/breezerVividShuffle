@@ -16,7 +16,7 @@ import TitleImage from '../../Assets/faqImages/faq_title.svg';
 import bottle from '../../Assets/faqImages/bottle.svg';
 import card11_illustrations_1 from '../../Assets/faqImages/card11_illustrations_1.svg';
 
-import FAQ_BG from '../../Assets/backgrounds/faq_background.png';
+import FAQ_BG from '../../Assets/backgrounds/faq_background-01.png';
 import facebook from '../../Assets/categories/facebook.svg'
 import youtube01 from '../../Assets/categories/youtube01.svg'
 import spotify from '../../Assets/spotify.svg'
