@@ -2,8 +2,18 @@
     /* position: absolute;
     top: 0;
     z-index: -1; */
+    position: relative;
 }
-
+.work-muted {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    right: 4vh;
+    bottom: 5vh;
+  }
+  .work-muted:hover{
+    cursor: pointer;
+  }
 .landing_about {
     display: flex;
     width: 100%;

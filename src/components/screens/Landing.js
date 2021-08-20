@@ -34,6 +34,8 @@ import AOS from 'aos';
 import star from '../../Assets/illustrations/star_mainPage.svg'
 import shuffle_title from '../../Assets/illustrations/shuffle_ambassador_pattern.svg'
 import videobg from '../../Assets/ambassdor/videobg.mp4'
+import volume from '../../Assets/volume.png'
+import muted from '../../Assets/mute.png'
 import {InstagramOutlined} from '@ant-design/icons'
 import "aos/dist/aos.css"
 import InstagramFeed  from 'react-ig-feed'
@@ -51,7 +53,7 @@ function Landing(props) {
         email:''
     })
     const [emailValue,setEmailValue] = useState('')
-
+    const [isMuted,setIsMuted] = useState(true)
     const success = () => {
         message.success('Email has been Shared Successfully');
       };
@@ -114,9 +116,13 @@ function Landing(props) {
     return (
         <div >
             <div className="landing_banner">
-                <video id="video_bg" playsInline="playsinline" style={{width:'100%'}} preload={true} muted autoPlay={true} loop="loop">
+                <video id="video_bg" playsInline="playsinline" style={{width:'100%'}} preload={true} muted={isMuted} autoPlay={true} loop="loop">
                      <source src={videobg} type="video/mp4"></source>
                 </video>
+
+                <div className="work-muted" onClick={()=>setIsMuted(()=>!isMuted)}>
+                 <img src={isMuted?muted:volume} style={{height:'100%',width:'100%',objectFit:'contain'}}/>
+                </div>
             </div>
             {/* <div style={{backgroundImage:`url(${bg_ticker})`}} className={"floatingTextContainer"}>
                 <div className="marquee_container" width="100%" direction="left">
@@ -128,7 +134,7 @@ function Landing(props) {
                    
                 </div>
             </div> */}
-            <div style={{backgroundImage:`url(${bg_ticker})`}}>
+            <div style={{backgroundImage:`url(${bg_ticker})`,marginTop:-5}}>
                 <div className="client-slider">
                     <div className="client-slide-track">
                         <div className="client-slide">

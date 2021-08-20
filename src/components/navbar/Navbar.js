@@ -124,6 +124,7 @@ const Navbar = props => {
        <nav className={headerbg?"NavbarItems activeHeader":"NavbarItems"}  >
             <div className="menu-logo">
 			<img alt={"logo"} onClick={()=>{
+				history.push('/')
 				window.scrollTo(0,0);
 				setSelectedPage(null);
 			}} src={logo} className="logo_style" style={{height:100}}/>
