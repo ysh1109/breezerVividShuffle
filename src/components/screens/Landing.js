@@ -88,7 +88,7 @@ function Landing(props) {
                 const response  = await request.json()
                 
                 if(response?.message === 'Successfully Inserted' ){
-                    console.log(response)
+                    // console.log(response)
                     success()
                     setEmailValue('')
                 }
