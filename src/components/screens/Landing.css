@@ -36,7 +36,6 @@
     flex:0.6;
     display: flex;
     justify-content: center;
-    /* align-items: center;; */
 }
 .landing_about_content_text p {
     font-family: GothamMedium;
@@ -46,8 +45,6 @@
     text-align: left;
     letter-spacing: 1.5px;
     line-height: 1.8;
-    /* margin-top: 30px; */
-
 }
 
 .landing_about_content_image {
@@ -61,6 +58,7 @@
 .about_image_div:hover {
     cursor: pointer;
     transform: scale(1.1);
+    transition: .5s all ease-in-out;
 }
 
 .about_image_sos{
@@ -189,8 +187,8 @@
     letter-spacing: 2.5px;
     margin-top: 12px;
     margin-bottom: 50px;
-padding-left    :5px ;
-padding-right: 5px;
+    padding-left: 5px ;
+    padding-right: 5px;
 }
 .landing_squad_form {
     flex:0.7;
@@ -224,6 +222,7 @@ padding-right: 5px;
 .submit_image_1:hover {
     cursor: pointer;
     transform: scale(1.1);
+    transition: .4s all ease-in;
 }
 .shoe_image {
     width: 150px;
@@ -237,7 +236,6 @@ padding-right: 5px;
     color: #fff;
     font-family: GothamBlack;
     letter-spacing: 1.6px;
-    /* text-decoration: underline; */
     border-bottom: 2px solid #fff;
     font-size: 24px;
 }
@@ -308,7 +306,6 @@ padding-right: 5px;
 }
 .floatingTextContainer{
 	height:50px;
-	/* background-image: url('../../Assets/backgrounds/bg_ticker-02.png'); */
 	overflow:hidden;
 	width:100%;
     margin-top: -5px;
@@ -320,7 +317,6 @@ padding-right: 5px;
     font-size: 24px;
     padding-top: 6px;
     margin: 0px;
-    /* display: flex; */
     align-items: center;
 }
 
@@ -356,8 +352,6 @@ textarea:focus, input:focus{
         width: 90%;
         letter-spacing: 1px;
         line-height: 1.2;
-        /* margin-top: 30px; */
-    
     }
     .landing_about {
         height: 100vh
@@ -368,7 +362,6 @@ textarea:focus, input:focus{
         height: fit-content;
         background-size: cover;
         flex-direction: column;
-		/* height:40vh; */
 		justify-content:center;
 		align-items:center;
     }
@@ -381,8 +374,7 @@ textarea:focus, input:focus{
     }
     .landing_shuffle_title h2 {
         text-align: center;
-    margin-top: 15px;
-    /* font-size: 28px; */
+        margin-top: 15px;
     }
     .landing_category_title h2 {
         margin-top: 15px;
@@ -395,7 +387,6 @@ textarea:focus, input:focus{
     .about_image_1{
         height: 300px;
         max-width: 100%;
-        /* margin-top: 40px; */
     }
     .landing_squad_title h2 {
         font-family: GothamBlack;
@@ -432,12 +423,10 @@ textarea:focus, input:focus{
         text-align: center;
         margin-top: 15px;
         font-size: 28px;
-    /* font-size: 28px; */
     }
     .landing_squad_title h2 {
         font-size: 24px;
         font-weight: bolder;
-        
     }
     .landing_category_title h2 {
         font-size: 28px;
@@ -456,17 +445,16 @@ textarea:focus, input:focus{
     display: flex;
     justify-content: center;
     width: 100vw;
-
 }
   .center_social{
       justify-content: center;
       display: flex;
   }
 
+
   /* new ticker */
 
   .client-slider{
-    /* background: #fff; */
     height: 60px;
     margin: auto;
     overflow: hidden;
@@ -494,7 +482,6 @@ textarea:focus, input:focus{
 }
 .client-slider .client-slide {
     padding: 5px 25px 0 30px;
-
 }
 .client-slide{
     display: flex;
@@ -504,6 +491,7 @@ textarea:focus, input:focus{
     top: 0;
     transform: rotate(180deg);
 }
+
 @keyframes scroll{
     0% {
         transform: translateX(0);
