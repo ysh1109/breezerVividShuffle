@@ -1,7 +1,7 @@
 import React, { useState,useEffect} from 'react';
 import './Navbar.css';
 import logo from '../../Assets/logo/BVS_Logo.png'
-// import logo from '../../Assets/logo/bvs_logo.svg';
+import logoMov from '../../Assets/logo/Logo_Flip.mov';
 import logoWebm from '../../Assets/logo/bvslogoflip.webm'
 import Register from '../../Assets/categories/register.svg';
 import { Menu, Dropdown,Popover, Button,Tooltip } from 'antd';
@@ -24,6 +24,7 @@ const Navbar = props => {
     const [headerbg,setHeaderbg] = useState(false)
 	const history = useHistory();
     const [selectedPage,setSelectedPage] = useState(null)
+	const [isSafari,setIsSafari] = useState(false)
 	
     const handleClick = () => {
         setClicked(!clicked)
@@ -127,6 +128,9 @@ const Navbar = props => {
 				props.setVots(shuffElem.getBoundingClientRect().top);
 			}
 		}
+		// const isSafariDetected = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+		// const isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+		// setIsSafari(isChrome)
     },[])
     return (
       <div className="blur_effect">
@@ -144,8 +148,9 @@ const Navbar = props => {
 			}} src={logo} className="logo_style" style={{height:100}}/> */}
 
 			<video className="logo_style"  style={{height:150}} autoPlay loop muted playsInline>
-            {/* <source src={logoMov} type='video/mp4; codecs="hvc1"'></source> */}
-            <source src={logoWebm} type="video/webm"></source>
+				
+				<source src={logoWebm} type="video/webm"></source>:
+				<source src={logoMov} type='video/mp4; codecs="hvc1"'></source>
             </video>
             </div>
             <div className="menu-icon" onClick={handleClick}>
