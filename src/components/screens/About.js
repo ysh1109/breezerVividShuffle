@@ -23,7 +23,7 @@ export default props => {
     						hip-hop league. Through the seasons, we’ve provided a stage
     						for the community to showcase talent, build skill and share the
     						love for all things hip-hop. We’re coming to you alongside the
-    						biggest names in the industry to find the country’s best Breakers
+    						biggest names in the industry to find the country’s best Breakers,
     						Poppers, Rappers, Graffiti Artists and Showcase Crews and form
     						the ultimate league. Get ready to be a part of performances, battles,
     						masterclasses, and the Shuffle fam. This is the home of hip-hop
