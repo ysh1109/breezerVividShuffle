@@ -19,6 +19,7 @@ import ambassador5 from '../../Assets/ambassdor/ambassador1-01.png'
 import ambassador6 from '../../Assets/ambassdor/ambassador2-02.png'
 import schoolOfShuffleBg from '../../Assets/backgrounds/schoolOfShuffle-08.png'
 import schoolOfShuffleImg from '../../Assets/sos_title.svg'
+import sosbg from '../../Assets/sos/SOS_MainPg_Banner.jpg'
 import joinSquadbg from '../../Assets/backgrounds/join_squad.png'
 import shuffleAmbassdorBg from '../../Assets/backgrounds/bg04-02.png'
 import infobg from '../../Assets/backgrounds/last_bg-11.png'
@@ -252,9 +253,11 @@ function Landing(props) {
                 </div>
                 </div>
             </div>
-            <div id="shuffle" className="landing_category" style={{backgroundImage: `url(${schoolOfShuffleBg})`}}>
-                <img alt={"about_image_sos"} className="about_image_sos" src={schoolOfShuffleImg} fluid></img>
+
+            <div id="shuffle"  >
+                <img alt={"about_image_sos"} className="about_image_sos" src={sosbg} fluid></img>
             </div>
+
             <div className="landing_squad" style={{backgroundImage: `url(${joinSquadbg})`}}>
                 <div data-aos="flip-up" className="landing_squad_title">
                     <h2>JOIN THE SQUAD FOR EXCLUSIVE UPDATES</h2>
