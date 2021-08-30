@@ -31,7 +31,7 @@ import sept_title_19 from '../../Assets/sos/19sept_title-04.png'
 import devil_03 from '../../Assets/sos/devil-03.png'
 import karan_03 from '../../Assets/sos/karan-03.png'
 import mekholabose_03 from '../../Assets/sos/mekholabose-03.png'
-import nivideta_03 from '../../Assets/sos/devil-03.png'
+import nivideta_03 from '../../Assets/sos/nivideta-03.png'
 import sagar_03 from '../../Assets/sos/sagar-03.png'
 import vernon from '../../Assets/sos/vernon-03.png'
 import sos_logo from '../../Assets/sos/SOS_Logo_Final.png'
@@ -131,13 +131,18 @@ export default props => {
 					<img className="sos_sept_performer" alt={"SOS"} src={mekholabose_03} />	
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
+					<a target="_blank" href="https://breezervividshuffle.in/mehkhola.html" className="about_image_div">
 					<img className="sos_sept_submit" alt={"SOS"} src={book_seat_01} />	
+					</a>
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
 					<img className="sos_sept_performer" alt={"SOS"} src={vernon} />	
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
+				<a target="_blank" href="https://breezervividshuffle.in/vernon-monteiro.html" className="about_image_div">
+					
 					<img className="sos_sept_submit" alt={"SOS"} src={book_seat_02} />	
+				</a>
 				</div>
 				
 			</div>
@@ -150,13 +155,19 @@ export default props => {
 					<img className="sos_sept_performer" alt={"SOS"} src={devil_03} />	
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
+					<a target="_blank" href="https://breezervividshuffle.in/devil.html" className="about_image_div">
+					
 					<img className="sos_sept_submit" alt={"SOS"} src={book_seat_03} />	
+					</a>
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
 					<img className="sos_sept_performer" alt={"SOS"} src={sagar_03} />	
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
-					<img className="sos_sept_submit" alt={"SOS"} src={book_seat_04} />	
+					<a target="_blank" href="https://breezervividshuffle.in/sagar-bora.html" className="about_image_div">
+
+						<img className="sos_sept_submit" alt={"SOS"} src={book_seat_04} />	
+					</a>
 				</div>
 				
 			</div>
@@ -169,13 +180,19 @@ export default props => {
 					<img className="sos_sept_performer" alt={"SOS"} src={karan_03} />	
 				</div>
 				<div data-aos="fade-up"  className={"sos_flex"}>
+					<a target="_blank" href="https://breezervividshuffle.in/karan-kanchan.html" className="about_image_div">
+
 					<img className="sos_sept_submit" alt={"SOS"} src={book_seat_03} />	
+					</a>
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
 					<img className="sos_sept_performer" alt={"SOS"} src={nivideta_03} />	
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
+				<a target="_blank" href="https://breezervividshuffle.in/nivedita-sharma.html" className="about_image_div">
+					
 					<img className="sos_sept_submit" alt={"SOS"} src={book_seat_04} />	
+				</a>	
 				</div>
 				
 			</div>

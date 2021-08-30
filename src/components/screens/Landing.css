@@ -490,7 +490,7 @@ textarea:focus, input:focus{
     -webkit-animation: scroll 45s linear infinite;
     animation: scroll 45s linear infinite;
     display: flex;
-    width: 8000px;
+    width: 8500px;
 }
 .client-slider .client-slide {
     padding: 5px 25px 0 30px;
