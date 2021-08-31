@@ -76,8 +76,9 @@ function Landing(props) {
         const result = re.test(String(emailValue).toLowerCase());
 
         if(result) {
+            
             try {
-                const request = await fetch('https://v1.nocodeapi.com/ysh1109/google_sheets/PZMgIxjBTcKiCBoG?tabId=Sheet1',
+                const request = await fetch('https://v1.nocodeapi.com/omlbreezer/google_sheets/ewoTbCthkHYIpPCL?tabId=Sheet1',
                 {
                     method: 'POST',
                     headers: {
