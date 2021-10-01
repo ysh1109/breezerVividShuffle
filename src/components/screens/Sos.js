@@ -20,7 +20,13 @@ import book_seat_03 from '../../Assets/sos/SVG/book_seat_03.svg'
 import book_seat_04 from '../../Assets/sos/SVG/book_seat_04.svg'
 import book_seat_05 from '../../Assets/sos/SVG/book_seat_05.svg'
 import book_seat_06 from '../../Assets/sos/SVG/book_seat_06.svg'
-import cube_date from '../../Assets/sos/SVG/cube_date.svg'
+import BVS_SOS_IB_1 from '../../Assets/sos2/BVS-SOS-IB-1.png'
+import BVS_SOS_IB_2 from '../../Assets/sos2/BVS-SOS-IB-2.png'
+import BVS_SOS_IB_3 from '../../Assets/sos2/BVS-SOS-IB-3.png'
+import BVS_SOS_IB_4 from '../../Assets/sos2/BVS-SOS-IB-4.png'
+import BVS_SOS_IB_5 from '../../Assets/sos2/BVS-SOS-IB-5.png'
+import BVS_SOS_IB_6 from '../../Assets/sos2/BVS-SOS-IB-6.png'
+import cube_date from '../../Assets/sos2/date-head.svg'
 import heading_sos from '../../Assets/sos/SVG/heading_sos.svg'
 import learn_hiphop from '../../Assets/sos/SVG/learn_hiphop.svg'
 import rsvp_now from '../../Assets/sos/SVG/rsvp_now.svg'
@@ -124,22 +130,22 @@ export default props => {
 			</div>
 
 			<div className="sept_container_1">
-				<div data-aos="fade-up" className={"sos_flex"}>
+				{/* <div data-aos="fade-up" className={"sos_flex"}>
 					<img className="sos_sept_logo" alt={"SOS"} src={sept_title_17} />	
+				</div> */}
+				<div data-aos="fade-up" className={"sos_flex"}>
+					<img className="sos_sept_performer" alt={"SOS"} src={BVS_SOS_IB_1} />	
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
-					<img className="sos_sept_performer" alt={"SOS"} src={mekholabose_03} />	
-				</div>
-				<div data-aos="fade-up" className={"sos_flex"}>
-					<a target="_blank" href="https://breezervividshuffle.in/mehkhola.html" className="about_image_div">
+					<a target="_blank" href="https://breezervividshuffle.in/tanya-bhushan.html" className="about_image_div">
 					<img className="sos_sept_submit" alt={"SOS"} src={book_seat_01} />	
 					</a>
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
-					<img className="sos_sept_performer" alt={"SOS"} src={vernon} />	
+					<img className="sos_sept_performer" alt={"SOS"} src={BVS_SOS_IB_6} />	
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
-				<a target="_blank" href="https://breezervividshuffle.in/vernon-monteiro.html" className="about_image_div">
+				<a target="_blank" href="https://breezervividshuffle.in/shayan-roy.html" className="about_image_div">
 					
 					<img className="sos_sept_submit" alt={"SOS"} src={book_seat_02} />	
 				</a>
@@ -148,23 +154,23 @@ export default props => {
 			</div>
 
 			<div className="sept_container_1" style={{marginTop:20}}>
-				<div data-aos="fade-up" className={"sos_flex"}>
+				{/* <div data-aos="fade-up" className={"sos_flex"}>
 					<img className="sos_sept_logo" alt={"SOS"} src={sept_title_18} />	
+				</div> */}
+				<div data-aos="fade-up" className={"sos_flex"}>
+					<img className="sos_sept_performer" alt={"SOS"} src={BVS_SOS_IB_5} />	
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
-					<img className="sos_sept_performer" alt={"SOS"} src={devil_03} />	
-				</div>
-				<div data-aos="fade-up" className={"sos_flex"}>
-					<a target="_blank" href="https://breezervividshuffle.in/devil.html" className="about_image_div">
+					<a target="_blank" href="https://breezervividshuffle.in/bhattchin.html" className="about_image_div">
 					
 					<img className="sos_sept_submit" alt={"SOS"} src={book_seat_03} />	
 					</a>
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
-					<img className="sos_sept_performer" alt={"SOS"} src={sagar_03} />	
+					<img className="sos_sept_performer" alt={"SOS"} src={BVS_SOS_IB_3} />	
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
-					<a target="_blank" href="https://breezervividshuffle.in/sagar-bora.html" className="about_image_div">
+					<a target="_blank" href="https://breezervividshuffle.in/phenom.html" className="about_image_div">
 
 						<img className="sos_sept_submit" alt={"SOS"} src={book_seat_04} />	
 					</a>
@@ -173,23 +179,23 @@ export default props => {
 			</div>
 
 			<div className="sept_container_1" style={{marginTop:30}}>
-				<div data-aos="fade-up"  className={"sos_flex"}>
+				{/* <div data-aos="fade-up"  className={"sos_flex"}>
 					<img className="sos_sept_logo" alt={"SOS"} src={sept_title_19} />	
-				</div>
+				</div> */}
 				<div data-aos="fade-up" className={"sos_flex"}>
-					<img className="sos_sept_performer" alt={"SOS"} src={karan_03} />	
+					<img className="sos_sept_performer" alt={"SOS"} src={BVS_SOS_IB_2} />	
 				</div>
 				<div data-aos="fade-up"  className={"sos_flex"}>
-					<a target="_blank" href="https://breezervividshuffle.in/karan-kanchan.html" className="about_image_div">
+					<a target="_blank" href="https://breezervividshuffle.in/jahnavi.html" className="about_image_div">
 
 					<img className="sos_sept_submit" alt={"SOS"} src={book_seat_03} />	
 					</a>
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
-					<img className="sos_sept_performer" alt={"SOS"} src={nivideta_03} />	
+					<img className="sos_sept_performer" alt={"SOS"} src={BVS_SOS_IB_4} />	
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
-				<a target="_blank" href="https://breezervividshuffle.in/nivedita-sharma.html" className="about_image_div">
+				<a target="_blank" href="https://breezervividshuffle.in/ruel.html" className="about_image_div">
 					
 					<img className="sos_sept_submit" alt={"SOS"} src={book_seat_04} />	
 				</a>	
