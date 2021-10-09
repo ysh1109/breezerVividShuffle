@@ -85,14 +85,24 @@ const Navbar = props => {
       const menu = (
         <Menu>
           <Menu.Item key="0">
-            <a href="https://insider.in/breezer-vivid-shuffle-online/article" target="_blank">Participation </a>
+            {/* <a href="https://insider.in/breezer-vivid-shuffle-online/article" target="_blank">Participation </a> */}
+	
+
+			<a onClick={() => {history.push('/sos'); window.scrollTo(0,0); setClicked(false); setSelectedPage(2)}}>School of Shuffle</a>
+
           </Menu.Item>
           <Menu.Item key="1">
+
 		  	{/* <Tooltip placement="right" title={<span>Coming Soon</span>}>  */}
-			  <a onClick={() => {history.push('/sos'); window.scrollTo(0,0); setClicked(false); setSelectedPage(2)}}>School of Shuffle</a>
             {/* <a onClick={scrollShuffleToTop}>School of Shuffle</a> */}
 			{/* </Tooltip> */}
+            <a href="https://breezervividshuffle.in/league-qualifier" target="_blank">League Qualifiers</a>
+
           </Menu.Item>
+		  <Menu.Item key="2">
+			  <a href="https://insider.in/breezer-vivid-shuffle-op-open-dance-category-oct4-2021/event" target="_blank">BREEZER Vivid Shuffle OP</a>
+
+		  </Menu.Item>
           <Menu.Divider />
         </Menu>
       );

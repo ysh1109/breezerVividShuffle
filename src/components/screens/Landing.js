@@ -133,37 +133,44 @@ function Landing(props) {
                     <div className="client-slide-track">
                         <div className="client-slide">
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
-                        <p className="marquee_text">School Of Shuffle Coming Soon * #VoiceOfTheStreets * LiveLifeInColour</p>
+                        <p className="marquee_text">RSVP for League Qualifiers
+REGISTER for BREEZER Vivid Shuffle OP</p>
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:10,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:10,marginTop:10}} fluid></img>
-                        <p className="marquee_text">School Of Shuffle Coming Soon * #VoiceOfTheStreets * LiveLifeInColour</p>
+                        <p className="marquee_text">RSVP for League Qualifiers
+REGISTER for BREEZER Vivid Shuffle OP</p>
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:10,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
-                        <p className="marquee_text">School Of Shuffle Coming Soon * #VoiceOfTheStreets * LiveLifeInColour</p>
+                        <p className="marquee_text">RSVP for League Qualifiers
+REGISTER for BREEZER Vivid Shuffle OP</p>
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:10,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
-                        <p className="marquee_text">School Of Shuffle Coming Soon * #VoiceOfTheStreets * LiveLifeInColour</p>
+                        <p className="marquee_text">RSVP for League Qualifiers
+REGISTER for BREEZER Vivid Shuffle OP</p>
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:10,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
-                        <p className="marquee_text">School Of Shuffle Coming Soon * #VoiceOfTheStreets * LiveLifeInColour</p>
+                        <p className="marquee_text">RSVP for League Qualifiers
+REGISTER for BREEZER Vivid Shuffle OP</p>
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:10,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
-                        <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets | Season 5 | School of 17-19 Sept 2021</p>
+                        <p className="marquee_text">RSVP for League Qualifiers
+REGISTER for BREEZER Vivid Shuffle OP</p>
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:10,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
-                        <p className="marquee_text">School Of Shuffle Coming Soon * #VoiceOfTheStreets * LiveLifeInColour</p>
+                        <p className="marquee_text">RSVP for League Qualifiers
+REGISTER for BREEZER Vivid Shuffle OP</p>
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:10,marginTop:10}} fluid></img>
                         </div>
                     </div>
@@ -177,37 +184,67 @@ function Landing(props) {
                     <div className="client-slide-track">
                         <div className="client-slide">
                             <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
-                                <p className="marquee_text">School Of Shuffle Coming Soon * #VoiceOfTheStreets * LiveLifeInColour</p>
+                                <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets</p>
                             <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
                             <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
-                                <p className="marquee_text">School Of Shuffle Coming Soon * #VoiceOfTheStreets * LiveLifeInColour</p>
+                                <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets</p>
                             <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
                             <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
-                                <p className="marquee_text">School Of Shuffle Coming Soon * #VoiceOfTheStreets * LiveLifeInColour</p>
+                                <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets</p>
                             <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
                             <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
-                                <p className="marquee_text">School Of Shuffle Coming Soon * #VoiceOfTheStreets * LiveLifeInColour</p>
+                                <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets</p>
                             <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
                             <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
-                                <p className="marquee_text">School Of Shuffle Coming Soon * #VoiceOfTheStreets * LiveLifeInColour</p>
+                                <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets</p>
                             <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
                             <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
-                                <p className="marquee_text">School Of Shuffle Coming Soon * #VoiceOfTheStreets * LiveLifeInColour</p>
+                                <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets</p>
                             <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
                             <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
-                                <p className="marquee_text">School Of Shuffle Coming Soon * #VoiceOfTheStreets * LiveLifeInColour</p>
+                                <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets</p>
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                        </div>
+                        <div className="client-slide">
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                                <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets</p>
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                        </div>
+                        <div className="client-slide">
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                                <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets</p>
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                        </div>
+                        <div className="client-slide">
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                                <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets</p>
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                        </div>
+                        <div className="client-slide">
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                                <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets</p>
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                        </div>
+                        <div className="client-slide">
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                                <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets</p>
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                        </div>
+                        <div className="client-slide">
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                                <p className="marquee_text">#LiveLifeInColour #VoiceOfTheStreets</p>
                             <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
                         </div>
                     </div>
