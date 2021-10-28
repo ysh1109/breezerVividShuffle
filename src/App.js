@@ -34,9 +34,9 @@ function App() {
           <Route path="/faq">
             <FAQ />
           </Route>
-          <Route path="/sos">
+          {/* <Route path="/sos">
             <SOS />
-          </Route>
+          </Route> */}
           <Route path="/">
 			<Landing abt={abt} setAbt={setAbt} cat={cat} setCat={setCat} vots={vots} setVots={setVots}
 	  		/>

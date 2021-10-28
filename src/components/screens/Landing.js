@@ -134,43 +134,43 @@ function Landing(props) {
                         <div className="client-slide">
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
                         <p className="marquee_text">RSVP for League Qualifiers
-REGISTER for BREEZER Vivid Shuffle OP</p>
+REGISTER for BREEZER Vivid Shuffle Open Category</p>
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:10,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:10,marginTop:10}} fluid></img>
                         <p className="marquee_text">RSVP for League Qualifiers
-REGISTER for BREEZER Vivid Shuffle OP</p>
+REGISTER for BREEZER Vivid Shuffle Open Category</p>
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:10,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
                         <p className="marquee_text">RSVP for League Qualifiers
-REGISTER for BREEZER Vivid Shuffle OP</p>
+REGISTER for BREEZER Vivid Shuffle Open Category</p>
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:10,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
                         <p className="marquee_text">RSVP for League Qualifiers
-REGISTER for BREEZER Vivid Shuffle OP</p>
+REGISTER for BREEZER Vivid Shuffle Open Category</p>
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:10,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
                         <p className="marquee_text">RSVP for League Qualifiers
-REGISTER for BREEZER Vivid Shuffle OP</p>
+REGISTER for BREEZER Vivid Shuffle Open Category</p>
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:10,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
                         <p className="marquee_text">RSVP for League Qualifiers
-REGISTER for BREEZER Vivid Shuffle OP</p>
+REGISTER for BREEZER Vivid Shuffle Open Category</p>
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:10,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
                         <p className="marquee_text">RSVP for League Qualifiers
-REGISTER for BREEZER Vivid Shuffle OP</p>
+REGISTER for BREEZER Vivid Shuffle Open Category</p>
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:10,marginTop:10}} fluid></img>
                         </div>
                     </div>
@@ -300,8 +300,8 @@ REGISTER for BREEZER Vivid Shuffle OP</p>
             </div>
 
             <div id="shuffle" >
-                {screenSize<768?<img alt={"about_image_sos"} className="about_image_sos" src={sosbgMobile} fluid></img>:
-                <img alt={"about_image_sos"} className="about_image_sos" src={sosbg} fluid></img>}
+                {/* {screenSize<768?<img alt={"about_image_sos"} className="about_image_sos" src={sosbgMobile} fluid></img>:
+                <img alt={"about_image_sos"} className="about_image_sos" src={sosbg} fluid></img>} */}
             </div>
             {/* <div id="shuffle" style={{backgroundImage: `url(${schoolOfShuffleBg})`,display:'flex',backgroundSize:'cover'}} >
                 {screenSize<768?<img alt={"about_image_sos"} className="about_image_sos" src={schoolOfShuffleImg} fluid></img>:
