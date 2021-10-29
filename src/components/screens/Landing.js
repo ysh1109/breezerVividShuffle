@@ -29,6 +29,8 @@ import submitButton from '../../Assets/illustrations/button_submit_1.svg'
 import shoe from '../../Assets/illustrations/SVG/shoe.svg'
 import facebook from '../../Assets/categories/facebook.svg'
 import youtube01 from '../../Assets/categories/youtube01.svg'
+import OC_mobile from '../../Assets/oc/OC_mobile.png'
+import OC_web from '../../Assets/oc/OC_web.jpg'
 import shuffleTitle from '../../Assets/illustrations/shuffle_title.svg'
 import spotify from '../../Assets/spotify.svg'
 // import logoVideo from '../../Assets/2x/Logo_Flip.mov';
@@ -307,6 +309,10 @@ REGISTER for BREEZER Vivid Shuffle Open Category</p>
                 {screenSize<768?<img alt={"about_image_sos"} className="about_image_sos" src={schoolOfShuffleImg} fluid></img>:
                 <img alt={"about_image_sos"} className="about_image_sos" src={schoolOfShuffleImg} fluid></img>}
             </div> */}
+            <div id="shuffle" style={{display:'flex',backgroundSize:'cover'}} >
+                {screenSize<768?<img alt={"about_image_sos"} className="about_image_sos" src={OC_mobile} fluid></img>:
+                <img alt={"about_image_sos"} className="about_image_sos" src={OC_web} fluid></img>}
+            </div>
 
             <div className="landing_squad" style={{backgroundImage: `url(${joinSquadbg})`}}>
                 <div data-aos="flip-up" className="landing_squad_title">
