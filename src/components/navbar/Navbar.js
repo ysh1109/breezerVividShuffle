@@ -96,7 +96,7 @@ const Navbar = props => {
 		  	{/* <Tooltip placement="right" title={<span>Coming Soon</span>}>  */}
             {/* <a onClick={scrollShuffleToTop}>School of Shuffle</a> */}
 			{/* </Tooltip> */}
-            <a href="https://breezervividshuffle.in/league-qualifier" target="_blank">League Qualifiers</a>
+            <a href="https://breezervividshuffle.in/finale-2021" target="_blank">Finale</a>
 
           </Menu.Item>
 		  <Menu.Item key="2">
@@ -171,7 +171,7 @@ const Navbar = props => {
            <div className="menu-list" >
              <div className={clicked?'nav-menu active':'nav-menu'}>
                 <li><span className={selectedPage===0?"aboutNav-active":"aboutNav"} onClick = {scrollAboutToTop}>About</span></li>
-                <li><span className={selectedPage===1?"categoriesNav-active":"categoriesNav"} onClick = {scrollCategoryToTop}>Categories</span></li>
+                <li><span className={selectedPage===1?"categoriesNav-active":"categoriesNav"} onClick = {scrollCategoryToTop}>Finale</span></li>
                 {/* <li><span className={selectedPage===2?"sosNav-active":"sosNav"} onClick= {scrollShuffleToTop}>School of Shuffle</span></li> */}
                 {/* <li><span className={selectedPage===2?"sosNav-active":"sosNav"} onClick={() => {history.push('/sos'); window.scrollTo(0,0); setClicked(false); setSelectedPage(2)}}>School of Shuffle</span></li> */}
                 <li className={selectedPage===3 ? "voiceNav-active":"voiceNav"}><span  onClick={() => {history.push('/voiceofthestreets'); window.scrollTo(0,0); setClicked(false); setSelectedPage(3)}} >Voice Of The Streets</span></li>

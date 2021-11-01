@@ -41,6 +41,8 @@ import videobg from '../../Assets/ambassdor/videobg.mp4'
 import volume from '../../Assets/volume.png'
 import muted from '../../Assets/mute.png'
 import {InstagramOutlined} from '@ant-design/icons'
+import finale_mobile from '../../Assets/finale/Finale-mobile-01.png'
+import finale_desktop from '../../Assets/finale/Finale-web-01.png'
 import "aos/dist/aos.css"
 import InstagramFeed  from 'react-ig-feed'
 import 'react-ig-feed/dist/index.css'
@@ -255,8 +257,11 @@ REGISTER for BREEZER Vivid Shuffle Open Category</p>
             {/* <video  playsInline="playsinline" style={{width:'100%'}} preload={true} muted autoPlay={true} loop="loop">
                      <source src={logoVideo} type="video/mp4"></source>
                 </video> */}
-
-            <div id="category" className="landing_category" style={{backgroundImage: `url(${bg_categories})`}}>
+             <div id="category"  >
+                {screenSize<768?<img alt={"about_image_sos"} className="about_image_sos" style={{marginTop:0}} src={finale_mobile} fluid></img>:
+                <img alt={"about_image_sos"} className="about_image_sos" style={{marginTop:0}} src={finale_desktop} fluid></img>}
+            </div>
+            {/* <div id="category" className="landing_category" style={{backgroundImage: `url(${bg_categories})`}}>
                 <div data-aos="flip-up" className="landing_category_title">
                     <h2>CATEGORIES</h2>
                 </div>
@@ -281,7 +286,7 @@ REGISTER for BREEZER Vivid Shuffle Open Category</p>
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className="landing_shuffle" style={{backgroundImage: `url(${shuffleAmbassdorBg})`}}>
                 <div data-aos="flip-up" className="landing_shuffle_title">
