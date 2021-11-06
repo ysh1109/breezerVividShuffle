@@ -99,10 +99,10 @@ const Navbar = props => {
             <a href="https://breezervividshuffle.in/finale-2021" target="_blank">Finale</a>
 
           </Menu.Item>
-		  <Menu.Item key="2">
+		  {/* <Menu.Item key="2">
 			  <a href="https://insider.in/breezer-vivid-shuffle-op-open-dance-category-oct4-2021/event" target="_blank">Open Category</a>
 
-		  </Menu.Item>
+		  </Menu.Item> */}
           <Menu.Divider />
         </Menu>
       );
