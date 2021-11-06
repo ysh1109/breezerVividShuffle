@@ -311,10 +311,10 @@ function Landing(props) {
                 {screenSize<768?<img alt={"about_image_sos"} className="about_image_sos" src={schoolOfShuffleImg} fluid></img>:
                 <img alt={"about_image_sos"} className="about_image_sos" src={schoolOfShuffleImg} fluid></img>}
             </div> */}
-            <div id="shuffle" style={{display:'flex',backgroundSize:'cover'}} >
+            {/* <div id="shuffle" style={{display:'flex',backgroundSize:'cover'}} >
                 {screenSize<768?<img alt={"about_image_sos"} className="about_image_sos" src={OC_mobile} fluid></img>:
                 <img alt={"about_image_sos"} className="about_image_sos" src={OC_web} fluid></img>}
-            </div>
+            </div> */}
 
             <div className="landing_squad" style={{backgroundImage: `url(${joinSquadbg})`}}>
                 <div data-aos="flip-up" className="landing_squad_title">
