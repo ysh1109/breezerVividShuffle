@@ -171,6 +171,16 @@ function Landing(props) {
                         <p className="marquee_text">Shop the BREEZER Vivid Shuffle x Rowdy Collection</p>
                         <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:10,marginTop:10}} fluid></img>
                         </div>
+                        <div className="client-slide">
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                        <p className="marquee_text">Shop the BREEZER Vivid Shuffle x Rowdy Collection</p>
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:10,marginTop:10}} fluid></img>
+                        </div>
+                        <div className="client-slide">
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                        <p className="marquee_text">Shop the BREEZER Vivid Shuffle x Rowdy Collection</p>
+                        <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:10,marginTop:10}} fluid></img>
+                        </div>
                     </div>
                     </a>
                 </div>
@@ -213,6 +223,15 @@ function Landing(props) {
                             <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
                         </div>
                         <div className="client-slide">
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                                <p className="marquee_text">Shop the BREEZER Vivid Shuffle x Rowdy Collection</p>
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                        </div>
+                        <div className="client-slide">
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
+                                <p className="marquee_text">Shop the BREEZER Vivid Shuffle x Rowdy Collection</p>
+                            <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
+                        </div> <div className="client-slide">
                             <img alt={"about_image"} src={star} style={{width:30,height:30,marginRight:8,marginTop:10}} fluid></img>
                                 <p className="marquee_text">Shop the BREEZER Vivid Shuffle x Rowdy Collection</p>
                             <img alt={"about_image"} src={star} style={{width:30,height:30,marginLeft:8,marginTop:10}} fluid></img>
