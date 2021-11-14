@@ -69,7 +69,7 @@ const Admin = () => {
          
           window.addEventListener('resize',screenWidth)
           setLoading(true)
-          axios.post('http://167.99.67.218/api/getAllUsers')
+          axios.post('https://breezervividshuffle.in/api/getAllUsers')
           .then(function (response) {
             setAllUsers([...response.data.data])
             setLoading(false)
@@ -119,7 +119,7 @@ const Admin = () => {
      },[screenSize])
     
     const CastVote = (participantName,category) => {
-        axios.post('http://167.99.67.218/api/castVote', {
+        axios.post('https://breezervividshuffle.in/api/castVote', {
             CategoryName: participantName,
             ContestantName: category
           })
@@ -138,7 +138,7 @@ const Admin = () => {
                     {graffiti.map((item,index)=>{
                         return(
                             <div style={{display:'flex',flexDirection:'column'}}>
-                            <img key={index} className="participant_img_1" alt={"about_image"} src={`http://167.99.67.218/${item.imgPath}`} fluid></img>
+                            <img key={index} className="participant_img_1" alt={"about_image"} src={`https://breezervividshuffle.in/${item.imgPath}`} fluid></img>
                             <span style={{background:'black',color:'white',fontWeight:'500',fontSize:24,textAlign:'center',padding:10,borderRadius:20,border:"1px solid white",marginTop:10}}>{item.name} = {item.votes}</span>
                             </div>
                         )
@@ -155,7 +155,7 @@ const Admin = () => {
                     {breaking.map((item,index)=>{
                         return(
                             <div style={{display:'flex',flexDirection:'column'}}>
-                            <img key={index} className="participant_img_1" alt={"about_image"} src={`http://167.99.67.218/${item.imgPath}`} fluid></img>
+                            <img key={index} className="participant_img_1" alt={"about_image"} src={`https://breezervividshuffle.in/${item.imgPath}`} fluid></img>
                             <span style={{background:'black',color:'white',fontWeight:'500',fontSize:24,textAlign:'center',padding:10,borderRadius:20,border:"1px solid white",marginTop:10}}>{item.name} = {item.votes}</span>
                             </div>
                         )
@@ -172,7 +172,7 @@ const Admin = () => {
                     {rapping.map((item,index)=>{
                         return(
                             <div style={{display:'flex',flexDirection:'column'}}>
-                            <img key={index} className="participant_img_1" alt={"about_image"} src={`http://167.99.67.218/${item.imgPath}`} fluid></img>
+                            <img key={index} className="participant_img_1" alt={"about_image"} src={`https://breezervividshuffle.in/${item.imgPath}`} fluid></img>
                             <span style={{background:'black',color:'white',fontWeight:'500',fontSize:24,textAlign:'center',padding:10,borderRadius:20,border:"1px solid white",marginTop:10}}>{item.name} = {item.votes}</span>
                             </div>
                         )
@@ -189,7 +189,7 @@ const Admin = () => {
                     {showcase.map((item,index)=>{
                         return(
                             <div style={{display:'flex',flexDirection:'column'}}>
-                            <img key={index} className="participant_img_1" alt={"about_image"} src={`http://167.99.67.218/${item.imgPath}`} fluid></img>
+                            <img key={index} className="participant_img_1" alt={"about_image"} src={`https://breezervividshuffle.in/${item.imgPath}`} fluid></img>
                             <span style={{background:'black',color:'white',fontWeight:'500',fontSize:24,textAlign:'center',padding:10,borderRadius:20,border:"1px solid white",marginTop:10}}>{item.name} = {item.votes}</span>
                             </div>
                         )
@@ -206,7 +206,7 @@ const Admin = () => {
                     {popping.map((item,index)=>{
                         return(
                             <div style={{display:'flex',flexDirection:'column'}}>
-                            <img key={index} className="participant_img_1" alt={"about_image"} src={`http://167.99.67.218/${item.imgPath}`} fluid></img>
+                            <img key={index} className="participant_img_1" alt={"about_image"} src={`https://breezervividshuffle.in/${item.imgPath}`} fluid></img>
                             <span style={{background:'black',color:'white',fontWeight:'500',fontSize:24,textAlign:'center',padding:10,borderRadius:20,border:"1px solid white",marginTop:10}}>{item.name} = {item.votes}</span>
                             </div>
                         )

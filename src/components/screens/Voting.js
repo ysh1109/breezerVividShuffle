@@ -120,8 +120,8 @@ const Voting = () => {
     
     const CastVote = (participantName,category) => {
         axios.post('https://breezervividshuffle.in/api/castVote', {
-            CategoryName: participantName,
-            ContestantName: category
+            CategoryName: category,
+            ContestantName: participantName
           })
         .then(function (response) {
           console.log(response)
