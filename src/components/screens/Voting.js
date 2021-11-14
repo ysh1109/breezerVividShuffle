@@ -137,7 +137,7 @@ const Voting = () => {
                 <div className="favourite_container">
                     {graffiti.map((item,index)=>{
                         return(
-                            <img key={index} onClick={()=>CastVote(item.name,'Graffiti')} className="participant_img" alt={"about_image"} src={`http://167.99.67.218/${item.imgPath}`} fluid></img>
+                            <img key={index} onClick={()=>CastVote(item.name,'Graffiti')} className="participant_img" alt={"about_image"} src={`https://breezervividshuffle.in/${item.imgPath}`} fluid></img>
                         )
                     })}
                 </div>
@@ -151,7 +151,7 @@ const Voting = () => {
                 <div className="favourite_container">
                     {breaking.map((item,index)=>{
                         return(
-                            <img  key={index} onClick={()=>CastVote(item.name,'Breaking')} className="participant_img" alt={"about_image"} src={`http://167.99.67.218/${item.imgPath}`} fluid></img>
+                            <img  key={index} onClick={()=>CastVote(item.name,'Breaking')} className="participant_img" alt={"about_image"} src={`https://breezervividshuffle.in/${item.imgPath}`} fluid></img>
                         )
                     })}
                 </div>
@@ -165,7 +165,7 @@ const Voting = () => {
                 <div className="favourite_container">
                     {rapping.map((item,index)=>{
                         return(
-                            <img  key={index} onClick={()=>CastVote(item.name,'Rapping')} className="participant_img" alt={"about_image"} src={`http://167.99.67.218/${item.imgPath}`} fluid></img>
+                            <img  key={index} onClick={()=>CastVote(item.name,'Rapping')} className="participant_img" alt={"about_image"} src={`https://breezervividshuffle.in/${item.imgPath}`} fluid></img>
                         )
                     })}
                 </div>
@@ -179,7 +179,7 @@ const Voting = () => {
                 <div className="favourite_container">
                     {showcase.map((item,index)=>{
                         return(
-                            <img  key={index} onClick={()=>CastVote(item.name,'Showcase')} className="participant_img" alt={"about_image"} src={`http://167.99.67.218/${item.imgPath}`} fluid></img>
+                            <img  key={index} onClick={()=>CastVote(item.name,'Showcase')} className="participant_img" alt={"about_image"} src={`https://breezervividshuffle.in/${item.imgPath}`} fluid></img>
                         )
                     })}
                 </div>
@@ -193,7 +193,7 @@ const Voting = () => {
                 <div className="favourite_container">
                     {popping.map((item,index)=>{
                         return(
-                            <img  key={index} onClick={()=>CastVote(item.name,'Popping')} className="participant_img" alt={"about_image"} src={`http://167.99.67.218/${item.imgPath}`} fluid></img>
+                            <img  key={index} onClick={()=>CastVote(item.name,'Popping')} className="participant_img" alt={"about_image"} src={`https://breezervividshuffle.in/${item.imgPath}`} fluid></img>
                         )
                     })}
                 </div>
