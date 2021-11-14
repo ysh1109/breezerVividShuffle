@@ -14,7 +14,7 @@ import b2 from '../../Assets/participants/Breaking/Breaking 2.png'
 import p1 from '../../Assets/participants/Popping/Popping 1.png'
 import p2 from '../../Assets/participants/Popping/Popping 2.png'
 import p3 from '../../Assets/participants/Popping/Popping 3.png'
-import { Drawer, Button, Space, Radio } from 'antd';
+import { Drawer, Button, Space, Radio,notification } from 'antd';
 import logo from '../../Assets/logo/BVS_Logo.png'
 import axios from 'axios';
 import { Spin } from 'antd';
@@ -125,9 +125,19 @@ const Voting = () => {
           })
         .then(function (response) {
           console.log(response)
+          notification['success']({
+            message: 'Voted Successfully',
+            description:
+              `You have successfully voted for ${participantName} in ${category} Category`,
+          });
         })
         .catch(function (error) {
           console.log(error);
+          notification['error']({
+            message: 'Something Went Wrong',
+            description:
+              `Please try again`,
+          });
         });
     }
     const GraffitiScreen = () => {
