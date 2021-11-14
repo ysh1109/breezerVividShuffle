@@ -69,7 +69,7 @@ const Voting = () => {
          
           window.addEventListener('resize',screenWidth)
           setLoading(true)
-          axios.post('http://167.99.67.218/api/getAllUsers')
+          axios.post('https://breezervividshuffle.in/api/getAllUsers')
           .then(function (response) {
             setAllUsers([...response.data.data])
             setLoading(false)
@@ -119,7 +119,7 @@ const Voting = () => {
      },[screenSize])
     
     const CastVote = (participantName,category) => {
-        axios.post('http://167.99.67.218/api/castVote', {
+        axios.post('https://breezervividshuffle.in/api/castVote', {
             CategoryName: participantName,
             ContestantName: category
           })
