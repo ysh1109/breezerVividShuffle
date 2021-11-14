@@ -6,6 +6,7 @@ import Landing from './components/screens/Landing';
 import FAQ from './components/screens/FAQ.js';
 import SOS from '../src/components/screens/Sos.js'
 import VoiceOfTheStreets from './components/screens/VoiceOfTheStreets.js'; 
+import Voting from './components/screens/Voting';
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,6 +15,7 @@ import {
   useRouteMatch,
   useParams
 } from "react-router-dom";
+import Admin from './components/screens/Admin';
 
 
 function App() {
@@ -24,20 +26,31 @@ function App() {
   return (
 	<Router>
     <div className="App">
-      <Navbar activeScreen={activeScreen} setActiveScreen={setActiveScreen}
-		abt={abt} setAbt={setAbt} cat={cat} setCat={setCat} vots={vots} setVots={setVots}
-	  />
+    
         <Switch>
           <Route path="/voiceofthestreets">
+          <Navbar activeScreen={activeScreen} setActiveScreen={setActiveScreen}
+		abt={abt} setAbt={setAbt} cat={cat} setCat={setCat} vots={vots} setVots={setVots}
+	  />
             <VoiceOfTheStreets />
           </Route>
           <Route path="/faq">
+          <Navbar activeScreen={activeScreen} setActiveScreen={setActiveScreen}
+		abt={abt} setAbt={setAbt} cat={cat} setCat={setCat} vots={vots} setVots={setVots}
+	  />
             <FAQ />
           </Route>
-          {/* <Route path="/sos">
-            <SOS />
-          </Route> */}
+          <Route path="/voting">
+             <Voting/>
+          </Route>
+          <Route path="/admin">
+            <Admin />
+          </Route>
+          
           <Route path="/">
+          <Navbar activeScreen={activeScreen} setActiveScreen={setActiveScreen}
+		abt={abt} setAbt={setAbt} cat={cat} setCat={setCat} vots={vots} setVots={setVots}
+	  />
 			<Landing abt={abt} setAbt={setAbt} cat={cat} setCat={setCat} vots={vots} setVots={setVots}
 	  		/>
           </Route>
