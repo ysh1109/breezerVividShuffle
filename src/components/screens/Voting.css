@@ -14,6 +14,7 @@
     flex:1;
     background-color: rgb(23, 26, 26);
     height: 100vh;
+    background-size: cover;
 }
 .voting_container_left_title {
     display: flex;
@@ -28,6 +29,7 @@
     letter-spacing: 1.5px;
     font-family: 'RUBIKMONOONE-REGULAR';
     text-align: center;
+    text-shadow: 0px 5px 5px black;
 }
 .voting_container_right_title {
     display: flex;
@@ -41,6 +43,7 @@
     font-family: 'RUBIKMONOONE-REGULAR';
     letter-spacing: 2px;
     text-align: center;
+    text-shadow: 0px 5px 5px gray;
 }
 .category_image{
     width: 12vw;
@@ -66,7 +69,13 @@
 .ant-drawer-body {
     padding: 0 !important;
 }
-
+.voting_container h1 {
+    font-family: 'RUBIKMONOONE-REGULAR';
+    font-size: 26px;
+    text-align: center;
+    color:yellow;
+    text-shadow: 0px 5px 5px black;
+}
 .floating_btn {
     height:75px;
     width:75px;
@@ -76,7 +85,8 @@
     box-shadow: 0 0 5px black ;
     position:fixed;
     bottom:5vh;
-    left:5vh
+    left:5vh;
+    z-index: 99;
 }
 .voting_container_favourite {
     padding: 20px;
@@ -84,10 +94,19 @@
 }
 .favourite_container {
     height: 74vh;
+    width: auto;
     overflow: scroll;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
+}
+.favourite_container_participant {
+    position: relative;
+}
+.voted {
+    position: absolute;
+    top: 0;
 }
 .favourite_container::-webkit-scrollbar {
     display: none;
