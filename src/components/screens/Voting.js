@@ -32,97 +32,6 @@ const Voting = () => {
     const [categoryName,setCategoryName] = useState('')
     const [votedList,setVotedList] = useState('')
    
-    const showDrawer = () => {
-        setVisible(true);
-      };
-    
-      const onClose = () => {
-        setVisible(false);
-      };
-
-    const notificationError = (participant) => {
-        notification['error']({
-            message: 'Already Voted',
-            description:
-              `You have already voted for ${participant} in Breaking Category`,
-          });
-    }
-    const setLocalStorage = () => {
-        let votingList = window.localStorage.getItem('votingList');
-        let obj = {}
-        if(votingList){
-            obj = JSON.parse(votingList)
-        }
-        else{
-             obj = {
-                'Breaking':'',
-                'Popping':'',
-                'Graffiti':'',
-                'Rapping':'',
-                'Showcase':''
-            }
-            window.localStorage.setItem('votingList',JSON.stringify(obj))
-            
-        }
-        
-      
-        switch(categoryName) {
-            case 'Breaking' : {
-                if(obj.Breaking==''){
-                 obj.Breaking = participantName
-                 voteService()
-                }
-                else {
-                   notificationError(obj.Breaking)
-                }
-                break;
-            }
-            case 'Popping' : {
-                if(obj.Popping==''){
-                  obj.Popping = participantName
-                  voteService()
-                }
-                else {
-                    notificationError(obj.Popping)
-                 }
-                break;
-            }
-            case 'Graffiti' : {
-                if(obj.Graffiti==''){
-                    obj.Graffiti = participantName
-                    voteService()
-                  }
-                  else {
-                      notificationError(obj.Graffiti)
-                   }
-                  break;
-            }
-            case 'Rapping' : {
-                if(obj.Rapping==''){
-                    obj.Rapping = participantName
-                    voteService()
-                  }
-                  else {
-                      notificationError(obj.Rapping)
-                   }
-                  break;
-            }
-            case 'Showcase' : {
-                if(obj.Showcase==''){
-                    obj.Showcase = participantName
-                    voteService()
-                  }
-                  else {
-                      notificationError(obj.Showcase)
-                   }
-                  break;
-            }
-            default : {
-            }  
-        }
-        console.log("voting list",obj)
-        window.localStorage.setItem('votingList',JSON.stringify(obj))
-    }
     useEffect(()=>{
         AOS.init({
             duration : 1500
@@ -130,6 +39,135 @@ const Voting = () => {
        getAllUsers()
           
       },[])
+
+      
+      useEffect(()=>{
+        console.log("users",allUsers)
+        allUsers.map((item)=>{
+            if(item.name === 'Breaking'){
+                setBreaking(item.Contestants)
+            }
+            if(item.name === 'Popping'){
+                setPopping(item.Contestants)
+            }
+            if(item.name === 'Graffiti'){
+                setGaffiti(item.Contestants)
+            }
+            if(item.name === 'Rapping'){
+                setRapping(item.Contestants)
+            }
+            if(item.name === 'Showcase'){
+                setShowcase(item.Contestants)
+            }
+        })
+      },[allUsers])
+
+      
+     useEffect(()=>{
+
+        setScreenSize(window.innerWidth)
+        if(screenSize>750){
+            setShowFloatingBtn(false)
+            setVisible(false)
+        }
+        if(screenSize<=750) {
+            setShowFloatingBtn(true)
+            
+        }
+     },[screenSize])
+
+        const showDrawer = () => {
+            setVisible(true);
+        };
+        
+        const onClose = () => {
+            setVisible(false);
+        };
+
+        const notificationError = (participant) => {
+        notification['error']({
+            message: 'Already Voted',
+            description:
+              `You have already voted for ${participant} in Breaking Category`,
+          });
+    }
+        const setLocalStorage = () => {
+            let votingList = window.localStorage.getItem('votingList');
+            let obj = {}
+            if(votingList){
+                obj = JSON.parse(votingList)
+            }
+            else{
+                obj = {
+                    'Breaking':'',
+                    'Popping':'',
+                    'Graffiti':'',
+                    'Rapping':'',
+                    'Showcase':''
+                }
+                window.localStorage.setItem('votingList',JSON.stringify(obj))
+                
+            }
+            
+        
+            switch(categoryName) {
+                case 'Breaking' : {
+                    if(obj.Breaking==''){
+                    obj.Breaking = participantName
+                    voteService()
+                    }
+                    else {
+                    notificationError(obj.Breaking)
+                    }
+                    break;
+                }
+                case 'Popping' : {
+                    if(obj.Popping==''){
+                    obj.Popping = participantName
+                    voteService()
+                    }
+                    else {
+                        notificationError(obj.Popping)
+                    }
+                    break;
+                }
+                case 'Graffiti' : {
+                    if(obj.Graffiti==''){
+                        obj.Graffiti = participantName
+                        voteService()
+                    }
+                    else {
+                        notificationError(obj.Graffiti)
+                    }
+                    break;
+                }
+                case 'Rapping' : {
+                    if(obj.Rapping==''){
+                        obj.Rapping = participantName
+                        voteService()
+                    }
+                    else {
+                        notificationError(obj.Rapping)
+                    }
+                    break;
+                }
+                case 'Showcase' : {
+                    if(obj.Showcase==''){
+                        obj.Showcase = participantName
+                        voteService()
+                    }
+                    else {
+                        notificationError(obj.Showcase)
+                    }
+                    break;
+                }
+                default : {
+                }  
+            }
+            console.log("voting list",obj)
+            window.localStorage.setItem('votingList',JSON.stringify(obj))
+        }
+    
 
       const getAllUsers = () => {
         let votingList = window.localStorage.getItem('votingList');
@@ -190,43 +228,11 @@ const Voting = () => {
         setCategoryName('')
       };
 
-      useEffect(()=>{
-        console.log("users",allUsers)
-        allUsers.map((item)=>{
-            if(item.name === 'Breaking'){
-                setBreaking(item.Contestants)
-            }
-            if(item.name === 'Popping'){
-                setPopping(item.Contestants)
-            }
-            if(item.name === 'Graffiti'){
-                setGaffiti(item.Contestants)
-            }
-            if(item.name === 'Rapping'){
-                setRapping(item.Contestants)
-            }
-            if(item.name === 'Showcase'){
-                setShowcase(item.Contestants)
-            }
-        })
-      },[allUsers])
 
       const screenWidth = () => {
         setScreenSize(window.innerWidth)
      }
 
-     useEffect(()=>{
-
-        setScreenSize(window.innerWidth)
-        if(screenSize>750){
-            setShowFloatingBtn(false)
-            setVisible(false)
-        }
-        if(screenSize<=750) {
-            setShowFloatingBtn(true)
-            
-        }
-     },[screenSize])
     
     const CastVote = (participant,category) => {
 
