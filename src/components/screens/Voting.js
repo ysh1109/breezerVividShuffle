@@ -9,7 +9,7 @@ import Showcase from '../../Assets/categories/MainPage_-08.png'
 import category_bg from '../../Assets/backgrounds/CategoriesBg.png'
 import favoutite_bg from '../../Assets/backgrounds/FavouritesBg.png'
 import AOS from 'aos';
-import vote from '../../Assets/participants/vote.png'
+import vote from '../../Assets/participants/voted.png'
 import { Drawer, Button, Space, Radio,notification,Modal } from 'antd';
 import logo from '../../Assets/logo/BVS_Logo.png'
 import axios from 'axios';
@@ -310,7 +310,7 @@ const Voting = () => {
                         return(
                             <div className="favourite_container_participant" >
                               <img  key={index} onClick={()=>CastVote(item.name,'Showcase')} className="participant_img" alt={"about_image"} src={`https://breezervividshuffle.in/${item.imgPath}`} fluid></img>
-                                {votedList?.Showcase == item.name &&<div className="voted">
+                                {votedList?.Showcase == item.name &&<div className="voted_showcase">
                                         <img src={vote} fluid />
                                 </div>}
                             </div>
@@ -381,7 +381,12 @@ const Voting = () => {
             </div>}
             <div className="voting_container_right" style={{backgroundImage: `url(${favoutite_bg})`}}>
                  <div className="voting_container_right_title">
-                    <span>VOTE YOUR FAVOURITE</span>
+                     <div style={{width:180}}>
+                          <img alt={"about_image"}  src={logo} style={{width:'100%'}} fluid></img>
+                     </div>
+                     <div style={{display:'flex',justifyContent:'center'}}>
+                         <span style={{textAlign:"center"}}>VOTE YOUR FAVOURITE</span>
+                     </div>
                 </div>
                {loading? <div style={{display:'flex',justifyContent:'center',height:'70vh',alignItems:'center'}}>
                    <Spin tip="Loading..." size="large" style={{color:"black"}} />
