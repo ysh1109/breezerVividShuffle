@@ -10,6 +10,7 @@ import category_bg from '../../Assets/backgrounds/CategoriesBg.png'
 import favoutite_bg from '../../Assets/backgrounds/FavouritesBg.png'
 import AOS from 'aos';
 import vote from '../../Assets/participants/voted.png'
+import floating from '../../Assets/participants/category.png'
 import { Drawer, Button, Space, Radio,notification,Modal } from 'antd';
 import logo from '../../Assets/logo/BVS_Logo.png'
 import axios from 'axios';
@@ -375,7 +376,7 @@ const Voting = () => {
 	return (
        <div id="voting" className="voting_container" >
              {showFloatingBtn?<div onClick={showDrawer} className="floating_btn">
-             <img alt={"about_image"}  src={logo} style={{width:'100%'}} fluid></img>
+             <img alt={"about_image"}  src={floating} style={{width:40}} fluid></img>
             </div>:<div className="voting_container_left" style={{backgroundImage: `url(${category_bg})`}}>
                 {<LeftContainer/>}
             </div>}
