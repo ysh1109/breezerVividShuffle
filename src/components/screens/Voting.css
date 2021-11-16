@@ -47,17 +47,23 @@
 }
 .category_image{
     width: 12vw;
+
     
 }
 .category_image:hover {
     cursor: pointer;
-    border:1px solid red;
-    background-color: burlywood;
+    width: 12vw;
+        border: 1px solid #9b9b9b;
+        border-radius: 10px;
+        background-color: #747474;
+        box-shadow: 0px 1px 5px white;
 }
 .category_image_selected {
-    width: 12vw;
-    border:1px solid red;
-    background-color: burlywood;
+        width: 12vw;
+        border: 1px solid #9b9b9b;
+        border-radius: 10px;
+        background-color: #747474;
+        box-shadow: 0px 1px 5px white;
 }
 .voting_category {
     margin-top: 20px;
@@ -65,6 +71,7 @@
 .voting_category_row_1 {
     display: flex;
     justify-content: center;
+    margin-top: 10px
 }
 .ant-drawer-body {
     padding: 0 !important;

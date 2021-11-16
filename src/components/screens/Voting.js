@@ -350,16 +350,16 @@ const Voting = () => {
                             </div>
                         </div>
                         <div className="voting_category_row_1" >
-                            <div  onClick={()=>{setSelectedCategory(3);setVisible(false)}}>
-                                <img alt={"about_image"}  className={selectedCategory==3?"category_image_selected":"category_image"} src={Rapping} fluid></img>
+                            <div  onClick={()=>{setSelectedCategory(5);setVisible(false)}} >
+                                <img alt={"about_image"}  className={selectedCategory==5?"category_image_selected":"category_image"} src={Showcase} fluid></img>
                             </div>
                             <div  onClick={()=>{setSelectedCategory(4);setVisible(false)}}>
                                  <img alt={"about_image"}  className={selectedCategory==4?"category_image_selected":"category_image"} src={Popping} fluid></img>
                             </div>
                         </div>
                         <div className="voting_category_row_1" >
-                            <div  onClick={()=>{setSelectedCategory(5);setVisible(false)}} >
-                                <img alt={"about_image"}  className={selectedCategory==5?"category_image_selected":"category_image"} src={Showcase} fluid></img>
+                        <div  onClick={()=>{setSelectedCategory(3);setVisible(false)}}>
+                                <img alt={"about_image"}  className={selectedCategory==3?"category_image_selected":"category_image"} src={Rapping} fluid></img>
                             </div>
                         </div>
                     </div>
