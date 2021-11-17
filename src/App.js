@@ -7,6 +7,7 @@ import FAQ from './components/screens/FAQ.js';
 import SOS from '../src/components/screens/Sos.js'
 import VoiceOfTheStreets from './components/screens/VoiceOfTheStreets.js'; 
 import Voting from './components/screens/Voting';
+import PhotoBooth from './components/photobooth/PhotoBooth';
 import {
   BrowserRouter as Router,
   Switch,
@@ -46,7 +47,7 @@ function App() {
           <Route path="/admin">
             <Admin />
           </Route>
-          
+          <Route path="/photobooth" exact component={PhotoBooth}/>
           <Route path="/">
           <Navbar activeScreen={activeScreen} setActiveScreen={setActiveScreen}
 		abt={abt} setAbt={setAbt} cat={cat} setCat={setCat} vots={vots} setVots={setVots}
@@ -54,6 +55,8 @@ function App() {
 			<Landing abt={abt} setAbt={setAbt} cat={cat} setCat={setCat} vots={vots} setVots={setVots}
 	  		/>
           </Route>
+          
+
         </Switch>
     </div>
     </Router>
