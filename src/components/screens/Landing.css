@@ -488,7 +488,7 @@ textarea:focus, input:focus{
     top: 0;
 }
 :not(svg) {
-    transform-origin: 0 0;
+    /* transform-origin: 0 0; */
 }
 .client-slider:after, .client-slider:before {
     content: "";

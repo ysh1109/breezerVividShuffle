@@ -13,3 +13,6 @@ body {
 html {
   scroll-behavior: smooth;
 }
+:not(svg) {
+  /* transform-origin: none !important; */
+}
