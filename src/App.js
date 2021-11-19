@@ -41,7 +41,7 @@ function App() {
 	  />
             <FAQ />
           </Route>
-          <Route path="/voting">
+          <Route path="/voteforyourfavouriteplayer">
              <Voting/>
           </Route>
           <Route path="/admin">

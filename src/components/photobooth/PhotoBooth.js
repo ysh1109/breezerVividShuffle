@@ -4,7 +4,6 @@ import React, {useEffect, useState } from 'react';
 // import Strip from './Assets/images/Strip.png';
 // import './Assets/styles/Lineup.css';
 import './PhotoBooth.css'
-import frame1 from '../../Assets/frames/booth6.png';
 import frame2 from '../../Assets/frames/booth2.png';
 import frame3 from '../../Assets/frames/booth3.png';
 import frame4 from '../../Assets/frames/booth4.png';
@@ -384,8 +383,8 @@ export default props => {
             <OrientationScreen />:
 			    <Row className="parent-row">
                     <div id="take-pic-btn" className="btns">
-                        <div>
-                            <a href="https://southsidestory.in"><img id="close-btn" src={CloseBtn} height={100} width={100}  /></a>
+                        <div style={{position:'absolute'}}>
+                            <a href="https://breezervividshuffle.in/"><img id="close-btn" src={CloseBtn} height={100} width={100}  /></a>
                         </div>
                     </div>
                     <div  id="camera-wrapper" >
