@@ -112,7 +112,7 @@ export default props => {
         let adjust = window.innerWidth - w;
         // if(translateIt)
         
-	if(faceingMode === "user") {
+	if(facingMode === "user") {
        	ctx.translate(cameraCanvas.width, 0);
        	ctx.scale(-1, 1);
 	}
