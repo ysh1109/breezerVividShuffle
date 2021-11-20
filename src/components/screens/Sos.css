@@ -80,7 +80,7 @@ body{
 	font-family: GothamBlack;
 	text-align: center;
 	display: flex;
-	color: #fff;
+	color: #5b1d54;
 	font-size: 18px;
 }
 .sos_text_blue {
@@ -106,7 +106,10 @@ body{
 	width: 550px;
 }
 .sos_sept_performer {
-	width: 75vw;
+	width: 50vw;
+}
+.sos_sept_performer_1 {
+	width: 35vw;
 }
 .sos_sept_submit {
 	width: 250px;
@@ -232,7 +235,10 @@ body{
 		width: 400px;
 	}
 	.sos_sept_performer {
-		width: 80vw;
+		width: 90vw;
+	}
+	.sos_sept_performer_1{
+		width: 70vw;
 	}
 	.sos_sept_submit {
 		width: 150px;

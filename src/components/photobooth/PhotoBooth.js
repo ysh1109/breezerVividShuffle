@@ -27,10 +27,10 @@ import CameraBtn from '../../Assets/images/cameraBtn.png';
 import Retakebtn from '../../Assets/images/close_Icon.png';
 import Downloadbtn from '../../Assets/images/downloadBtn.png';
 import Switchbtn from '../../Assets/switch.png'
-import btnicon1 from '../../Assets/photoboothicon/btnicon1.png';
-import btnicon2 from '../../Assets/photoboothicon/btnicon2.png';
-import btnicon3 from '../../Assets/photoboothicon/btnicon3.png';
-import btnicon4 from '../../Assets/photoboothicon/btnicon4.png';
+import btnicon1 from '../../Assets/photoboothicon/button01.png';
+import btnicon2 from '../../Assets/photoboothicon/button02.png';
+import btnicon3 from '../../Assets/photoboothicon/button03.png';
+import btnicon4 from '../../Assets/photoboothicon/button04.png';
 import OrientationScreen from './OrientationError.js'
 // import Aos from "aos";
 
@@ -402,20 +402,20 @@ export default props => {
                         <div  style={{position:"absolute", zIndex:11, bottom:10, left:0, right:0}}>
                             {!phtoClicked?<ul className="frames-ul">
                                 <li>
-                                    <img as="input" className={frameId==0?"img_shadow":""} style={{"backgroundColor":"rgba(0,0,0,0)"}} id="btnicon" onClick={() => changeFrame(0)} src={btnicon1} height={60} width={60} type="submit" value="2" />
+                                    <img as="input" className={frameId==0?"img_shadow":""} style={{borderRadius:"50%"}} id="btnicon" onClick={() => changeFrame(0)} src={btnicon1} height={60} width={60} type="submit" value="2" />
                                 </li>
                                 <li>
-                                    <img as="input" className={frameId==1?"img_shadow":""} style={{"backgroundColor":"rgba(0,0,0,0)"}} id="btnicon" onClick={() => changeFrame(1)} src={btnicon2} height={60} width={60} type="submit" value="2" />
+                                    <img as="input" className={frameId==1?"img_shadow":""} style={{borderRadius:"50%"}}  id="btnicon" onClick={() => changeFrame(1)} src={btnicon2} height={60} width={60} type="submit" value="2" />
                                 </li>
                                 <li>
                                     <img style={{"backgroundColor":"rgba(0,0,0,0)"}} id="clickPhto" onClick={()=>{setPhtoClicked(true)}}  src={CameraBtn} height={55} width={55}/>
                                 </li>
                                
                                 <li>
-                                    <img as="input" className={frameId==2?"img_shadow":""} style={{"backgroundColor":"rgba(0,0,0,0)"}} id="btnicon" onClick={() => changeFrame(2)} src={btnicon3} height={60} width={60} type="submit" value="2" />
+                                    <img as="input" className={frameId==2?"img_shadow":""} style={{borderRadius:"50%"}}  id="btnicon" onClick={() => changeFrame(2)} src={btnicon3} height={60} width={60} type="submit" value="2" />
                                 </li>
                                 <li>
-                                    <img as="input" className={frameId==3?"img_shadow":""} style={{"backgroundColor":"rgba(0,0,0,0)"}} id="btnicon" onClick={() => changeFrame(3)} src={btnicon3} height={60} width={60} type="submit" value="2" />
+                                    <img as="input" className={frameId==3?"img_shadow":""}  style={{borderRadius:"50%"}} id="btnicon" onClick={() => changeFrame(3)} src={btnicon4} height={60} width={60} type="submit" value="2" />
                                 </li>
                                 {/* {mobView? <li>
                                 <img as="input" onClick={() => changeFrame(4)} src={ClickBtn} height={40} width={40} type="submit" value="2" />

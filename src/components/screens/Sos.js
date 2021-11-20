@@ -27,19 +27,20 @@ import BVS_SOS_IB_4 from '../../Assets/sos2/BVS-SOS-IB-4.png'
 import BVS_SOS_IB_5 from '../../Assets/sos2/BVS-SOS-IB-5.png'
 import BVS_SOS_IB_6 from '../../Assets/sos2/BVS-SOS-IB-6.png'
 import cube_date from '../../Assets/sos2/date-head.svg'
-import heading_sos from '../../Assets/sos/SVG/heading_sos.svg'
+import heading_sos from '../../Assets/sose3/about.svg'
+import bookyourseats from '../../Assets/sose3/bookyourseats.svg'
+import dateHead from '../../Assets/sose3/dateHead.svg'
+import card1 from '../../Assets/sose3/cardJayman-02.svg'
+import card2 from '../../Assets/sose3/bboy.svg'
+import card3 from '../../Assets/sose3/cardMelvin.png'
+import card4 from '../../Assets/sose3/cardKarma.png'
+import card5 from '../../Assets/sose3/cardSkore.svg'
+import card6 from '../../Assets/sose3/cardPopin.png'
+
 import learn_hiphop from '../../Assets/sos/SVG/learn_hiphop.svg'
 import rsvp_now from '../../Assets/sos/SVG/rsvp_now.svg'
 import tape from '../../Assets/sos/SVG/tape.svg'
-import sept_title_17 from '../../Assets/sos/17sept_title-03.svg'
-import sept_title_18 from '../../Assets/sos/18sept_title-04.png'
-import sept_title_19 from '../../Assets/sos/19sept_title-04.png'
-import devil_03 from '../../Assets/sos/devil-03.png'
-import karan_03 from '../../Assets/sos/karan-03.png'
-import mekholabose_03 from '../../Assets/sos/mekholabose-03.png'
-import nivideta_03 from '../../Assets/sos/nivideta-03.png'
-import sagar_03 from '../../Assets/sos/sagar-03.png'
-import vernon from '../../Assets/sos/vernon-03.png'
+import edition from '../../Assets/sose3/edition3_1.svg'
 import sos_logo from '../../Assets/sos/SOS_Logo_Final.png'
 
 
@@ -89,39 +90,32 @@ export default props => {
 			<div data-aos="fade-up" className={"sos_flex"}>
 				<img className="sos_title_logo" alt={"SOS"} src={sos_logo} />	
 			</div>
+			<div data-aos="fade-up" style={{margin:'auto'}}>
+				<img className="sos_title_image" style={{width:250,marginTop:0,margin:'auto'}} alt={"SOS"} src={edition} />	
+			</div>
 			<div data-aos="fade-up" className={"sos_flex"}>
 				<img className="sos_title_image" alt={"SOS"} src={heading_sos} />	
 			</div>
+			
 			<div className="sos_text_div">
 				<p data-aos="fade-up" className="sos_text">
-					<p>
-				Are you ready to learn all things hip-hop from a whole new line-up of artists?
-				‘Cause BREEZER Vivid Shuffle’s <span className="sos_text_blue">School Of Shuffle</span> is back!<br/>
-				</p>
-				<br></br>
-					<p data-aos="fade-up" >
-					With exclusive <span className="sos_text_blue">101 workshops</span> with hip-hop’s biggest names in art forms
-						like popping, breaking, hip-hop dance, music, rap, art and more.
+					
+					<p className="sos_text_blue" data-aos="fade-up" >
+					 School Of Shuffle offers exclusive  101 workshops <br/> with hip-hop’s biggest names in art forms
+						like popping, breaking,<br/> hip-hop dance forms, music production, rap, art and more.
 					</p>
 					<br></br>
-					<p data-aos="fade-up" >
-					Level-up your skills, build a career in the hip-hop scene
-					and get insider tips from the best in the game.
-					</p>
-					<br></br>
-					<p data-aos="fade-up" >
-					Check out our previous masterclasses below. And grab a seat
-					at upcoming workshops now!
-					</p>
+					
+					
 				</p>
 			</div>
 
 			<div className="sos_rsvp_container">
 				<div data-aos="fade-up" className={"sos_flex"}>
-					<img className="sos_rsvp_logo" alt={"SOS"} src={rsvp_now} />	
+					<img className="sos_rsvp_logo" alt={"SOS"} src={bookyourseats} />	
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
-					<img className="sos_rsvp_logo_1" alt={"SOS"} src={cube_date} />	
+					<img className="sos_rsvp_logo_1" alt={"SOS"} src={dateHead} />	
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
 					<img className="sos_rsvp_logo_2" alt={"SOS"} src={learn_hiphop} />	
@@ -134,7 +128,7 @@ export default props => {
 					<img className="sos_sept_logo" alt={"SOS"} src={sept_title_17} />	
 				</div> */}
 				<div data-aos="fade-up" className={"sos_flex"}>
-					<img className="sos_sept_performer" alt={"SOS"} src={BVS_SOS_IB_1} />	
+					<img className="sos_sept_performer_1" alt={"SOS"} src={card1} />	
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
 					<a target="_blank" href="https://breezervividshuffle.in/tanya-bhushan.html" className="about_image_div">
@@ -142,7 +136,7 @@ export default props => {
 					</a>
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
-					<img className="sos_sept_performer" alt={"SOS"} src={BVS_SOS_IB_6} />	
+					<img className="sos_sept_performer" alt={"SOS"} src={card2} />	
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
 				<a target="_blank" href="https://breezervividshuffle.in/shayan-roy.html" className="about_image_div">
@@ -158,7 +152,7 @@ export default props => {
 					<img className="sos_sept_logo" alt={"SOS"} src={sept_title_18} />	
 				</div> */}
 				<div data-aos="fade-up" className={"sos_flex"}>
-					<img className="sos_sept_performer" alt={"SOS"} src={BVS_SOS_IB_5} />	
+					<img className="sos_sept_performer" alt={"SOS"} src={card3} />	
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
 					<a target="_blank" href="https://breezervividshuffle.in/bhattchin.html" className="about_image_div">
@@ -167,7 +161,7 @@ export default props => {
 					</a>
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
-					<img className="sos_sept_performer" alt={"SOS"} src={BVS_SOS_IB_3} />	
+					<img className="sos_sept_performer" alt={"SOS"} src={card4} />	
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
 					<a target="_blank" href="https://breezervividshuffle.in/phenom.html" className="about_image_div">
@@ -183,7 +177,7 @@ export default props => {
 					<img className="sos_sept_logo" alt={"SOS"} src={sept_title_19} />	
 				</div> */}
 				<div data-aos="fade-up" className={"sos_flex"}>
-					<img className="sos_sept_performer" alt={"SOS"} src={BVS_SOS_IB_2} />	
+					<img className="sos_sept_performer" alt={"SOS"} src={card5} />	
 				</div>
 				<div data-aos="fade-up"  className={"sos_flex"}>
 					<a target="_blank" href="https://breezervividshuffle.in/jahnavi.html" className="about_image_div">
@@ -192,7 +186,7 @@ export default props => {
 					</a>
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
-					<img className="sos_sept_performer" alt={"SOS"} src={BVS_SOS_IB_4} />	
+					<img className="sos_sept_performer" alt={"SOS"} src={card6} />	
 				</div>
 				<div data-aos="fade-up" className={"sos_flex"}>
 				<a target="_blank" href="https://breezervividshuffle.in/ruel.html" className="about_image_div">

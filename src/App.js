@@ -41,6 +41,12 @@ function App() {
 	  />
             <FAQ />
           </Route>
+          <Route path="/sos">
+          <Navbar activeScreen={activeScreen} setActiveScreen={setActiveScreen}
+		abt={abt} setAbt={setAbt} cat={cat} setCat={setCat} vots={vots} setVots={setVots}
+	  />
+            <SOS />
+          </Route>
           <Route path="/voteforyourfavouriteplayer">
              <Voting/>
           </Route>

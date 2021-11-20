@@ -173,7 +173,7 @@ const Navbar = props => {
                 <li><span className={selectedPage===0?"aboutNav-active":"aboutNav"} onClick = {scrollAboutToTop}>About</span></li>
                 <li><span className={selectedPage===1?"categoriesNav-active":"categoriesNav"} onClick = {scrollCategoryToTop}>Finale</span></li>
                 {/* <li><span className={selectedPage===2?"sosNav-active":"sosNav"} onClick= {scrollShuffleToTop}>School of Shuffle</span></li> */}
-                {/* <li><span className={selectedPage===2?"sosNav-active":"sosNav"} onClick={() => {history.push('/sos'); window.scrollTo(0,0); setClicked(false); setSelectedPage(2)}}>School of Shuffle</span></li> */}
+                <li><span className={selectedPage===2?"sosNav-active":"sosNav"} onClick={() => {history.push('/sos'); window.scrollTo(0,0); setClicked(false); setSelectedPage(2)}}>School of Shuffle</span></li>
                 <li className={selectedPage===3 ? "voiceNav-active":"voiceNav"}><span  onClick={() => {history.push('/voiceofthestreets'); window.scrollTo(0,0); setClicked(false); setSelectedPage(3)}} >Voice Of The Streets</span></li>
                 <li><span className={selectedPage===4 ? "faqNav-active":"faqNav"} onClick={() => {history.push('/faq');window.scrollTo(0,0);setClicked(false);setSelectedPage(4)}} >FAQs</span></li>
                 <li className="navbar_register">

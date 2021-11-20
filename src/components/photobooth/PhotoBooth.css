@@ -86,7 +86,10 @@
 #btnicon:hover {
     transform: scale(1.2);
 }
-
+.row>* {
+    padding-left: 0;
+    padding-right: 0;
+}
 @media only screen and (max-width: 1024px){
 
     #btnicon{
@@ -133,11 +136,11 @@
 .switch_camera {
     position: absolute;
     z-index: 1000;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     background-color: transparent;
     bottom: 0px;
-    right: 15px;
+    right: 0px;
 }
 
 .switch_camera:hover {
