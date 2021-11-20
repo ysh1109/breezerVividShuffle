@@ -112,8 +112,12 @@ export default props => {
         let adjust = window.innerWidth - w;
         // if(translateIt)
         
-        ctx.translate(cameraCanvas.width, 0);
-        ctx.scale(-1, 1);
+	if(faceingMode === "user") {
+       	ctx.translate(cameraCanvas.width, 0);
+       	ctx.scale(-1, 1);
+	}
+	else
+	    ctx.scale(1, 1);
 
         if(w>h)
         ctx.drawImage(im, adjust/2, 0, cameraCanvas.width-adjust, cameraCanvas.height);
