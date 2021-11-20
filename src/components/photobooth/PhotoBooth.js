@@ -113,8 +113,8 @@ export default props => {
         // if(translateIt)
         
 	if(facingMode === "user") {
-       	ctx.translate(cameraCanvas.width, 0);
-       	ctx.scale(-1, 1);
+       		ctx.translate(cameraCanvas.width, 0);
+       		ctx.scale(-1, 1);
 	}
 	else
 	    ctx.scale(1, 1);
@@ -399,7 +399,8 @@ export default props => {
                             <canvas style={{position:'absolute'}} id="camera-canvas"></canvas>
                             <Image src="//:0/" alt="" id="camera-image"  />
                             </>
-                            :<video style={{position:'absolute'}} id="camera-video" autoPlay playsInline></video>
+                           :<video style={{position:'absolute'}} id="camera-video" className={facingMode === "user"?"flipCamera":"donotFlipCamera"} autoPlay playsInline></video>
+
                         }
                         <Image onLoad={()=>{intializeVals()}}
                          id="image-overlay" src={frameNumber} width={window.innerWidth} />
