@@ -334,7 +334,7 @@ function Landing(props) {
                     <InstagramOutlined style={{marginTop:-5,color:'#fff',fontSize:48}}/> <span className="last_handle">@brezeervividshuffle</span>
                     <br></br>
                     <div className="center_social">
-                    <InstagramFeed token="IGQVJWSmp4UHRxVlJud0lqbEZAyNmNRdk5oclRkNDNzYVpxUHhZALU0wVE5FU015MVZAMZADhWQWdtV0N0MmhQZAHZA3SDB6d1ZAwdXVXT1dEeGw3endWTTNuNkMzT2M4TDZAQMFR4LVNyUndvNC1YSzIzQ1JkTAZDZD" counter="3"/>
+                    <InstagramFeed token="IGQVJVZAlhKTmlBb3dzWlZAxZAk5sY3FEX0J4d3JIaW1EQ3A1WHMyRWJsekZAOMWh5RHlqY21LeXA0aTlTWkFWMjdHM2NHNVNVMG5KV2tLUnQzSUNoU1NOd004MDgtWVhOVTl6MEdmN2dJekhVX0lzY244RAZDZD" counter="3"/>
                     </div>
                 </div>
             </div>

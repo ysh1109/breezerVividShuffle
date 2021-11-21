@@ -86,11 +86,11 @@ const Voting = () => {
             setVisible(false);
         };
 
-        const notificationError = (participant) => {
+        const notificationError = (participant,category) => {
         notification['error']({
             message: 'Already Voted',
             description:
-              `You have already voted for ${participant} in Breaking Category`,
+              `You have already voted for ${participant} in ${category} Category`,
           });
     }
         const setLocalStorage = () => {
@@ -119,7 +119,7 @@ const Voting = () => {
                     voteService()
                     }
                     else {
-                    notificationError(obj.Breaking)
+                    notificationError(obj.Breaking,'Breaking')
                     }
                     break;
                 }
@@ -129,7 +129,7 @@ const Voting = () => {
                     voteService()
                     }
                     else {
-                        notificationError(obj.Popping)
+                        notificationError(obj.Popping,'Popping')
                     }
                     break;
                 }
@@ -139,7 +139,7 @@ const Voting = () => {
                         voteService()
                     }
                     else {
-                        notificationError(obj.Graffiti)
+                        notificationError(obj.Graffiti,'Graffiti')
                     }
                     break;
                 }
@@ -149,7 +149,7 @@ const Voting = () => {
                         voteService()
                     }
                     else {
-                        notificationError(obj.Rapping)
+                        notificationError(obj.Rapping,'Rapping')
                     }
                     break;
                 }
@@ -159,7 +159,7 @@ const Voting = () => {
                         voteService()
                     }
                     else {
-                        notificationError(obj.Showcase)
+                        notificationError(obj.Showcase,'Showcase')
                     }
                     break;
                 }
