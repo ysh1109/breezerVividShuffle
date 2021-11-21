@@ -72,6 +72,7 @@ const autoRefresh = () => {
 // const orientationChangeHandler
 export default props => {
     const [frameNumber, setFrameNumber] = useState(frame2_h);
+    const [availableCameras, setAvailableCameras] = useState(0);
     // const [cameraWrapper, setCameraWrapper] = useState(null);
     const [vidW, setVidW] = useState(0);
     const [cameraVideo, setCameraVideo] = useState(null);
@@ -294,6 +295,10 @@ export default props => {
             else
                 setFrameNumber(frame2_h)
         }
+	navigator.mediaDevices.enumerateDevices().then ( function (devices) {
+  	    const videoDevices = devices.filter(device => device.kind === 'videoinput')
+	    setAvailableCameras(videoDevices.length);
+  	})
         return () => {
             window.removeEventListener('resize', autoRefresh);
             turnOffCamera();
@@ -440,9 +445,9 @@ export default props => {
                                 </div>
                                 </>
                             }
-                              <div className="switch_camera" onClick={()=>changeCameraView()}>
+			    {window.innerWidth < window.innerHeight && <div className="switch_camera" onClick={()=>changeCameraView()}>
                                 <img src={Switchbtn} style={{height:'100%',width:'100%'}} />
-                            </div>
+                            </div>}
                         </div>
                         
 
