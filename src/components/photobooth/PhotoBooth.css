@@ -74,9 +74,6 @@
 #camera-video{
     /* height: 500px; */
     height: auto;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);  
-    position: absolute;
 }
 #photoBoothPage .row , #photoBoothPage .mt-2, #photoBoothPage .parent-row{
     margin: 0!important;
