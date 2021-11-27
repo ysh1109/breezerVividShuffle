@@ -229,8 +229,8 @@ function Landing(props) {
                      <source src={logoVideo} type="video/mp4"></source>
                 </video> */}
              <div id="category"  >
-                {screenSize<768?<img alt={"about_image_sos"} className="about_image_sos" style={{marginTop:0}} src={finale_mobile} fluid></img>:
-                <img alt={"about_image_sos"} className="about_image_sos" style={{marginTop:0}} src={finale_desktop} fluid></img>}
+                {/* {screenSize<768?<img alt={"about_image_sos"} className="about_image_sos" style={{marginTop:0}} src={finale_mobile} fluid></img>:
+                <img alt={"about_image_sos"} className="about_image_sos" style={{marginTop:0}} src={finale_desktop} fluid></img>} */}
             </div>
             {/* <div id="category" className="landing_category" style={{backgroundImage: `url(${bg_categories})`}}>
                 <div data-aos="flip-up" className="landing_category_title">
